@@ -1,0 +1,4 @@
+.SectionLayout {
+  background-color: var(--background-color-1);
+  --section-content-width: 1000px;
+}

@@ -1,0 +1,40 @@
+.HeaderLayout {
+  position: relative;
+}
+
+.HeaderText {
+  margin-bottom: 16px;
+  text-wrap: balance;
+}
+
+.HeaderDetails {
+  max-width: 640px;
+}
+
+.HeaderNav {
+  position: absolute;
+  top: 0;
+  right: 0;
+  max-width: 100%;
+  padding: 48px;
+}
+
+@media screen and (max-width: 600px) {
+  .HeaderNav {
+    position: static;
+    padding: 0;
+    margin: 16px -16px 0;
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  .showDarkTheme {
+    display: none;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  .showLightTheme {
+    display: none;
+  }
+}
