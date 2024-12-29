@@ -1,0 +1,12 @@
+.Layout {
+  && {
+    border: unset;
+  }
+}
+
+.FooterSection {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}

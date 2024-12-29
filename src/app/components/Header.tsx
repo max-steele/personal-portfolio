@@ -23,7 +23,7 @@ export const Header: React.FC<React.ComponentProps<"header">> = ({
           height: 16 * 4,
           width: 16 * 4,
           marginInline: -16,
-          paddingLeft: 15,
+          paddingLeft: 18,
         }}
       />
 
