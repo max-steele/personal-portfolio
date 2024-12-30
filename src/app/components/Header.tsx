@@ -45,18 +45,16 @@ export const Header: React.FC<React.ComponentProps<"header">> = ({
       </Txt>
 
       <Txt tag="p" fg={2} className={style.HeaderDetails}>
-        Currently an undergraduate student at the University of Washington&apos;s {" "}
-        <Link href={"https://www.cs.washington.edu/"} {...external}>
-          Paul G. Allen School of Computer Science & Engineering
-        </Link>
-        {" "}
-        in Seattle, Washington. I am working at {" "}
+        Undergraduate student at the 
+        {" "}<Link href={"https://www.washington.edu/"} {...external}>
+          University of Washington 
+        </Link>{" "}
+        with professional software development experience. Currently working at {" "}
         <Link href={"https://www.pnnl.gov/"} {...external}>
           Pacific Northwest National Laboratory
         </Link>
         {"'s "}
-        Seattle Office as a Software Engineer Intern producing web apps for 
-        data visualization and biosecurity.
+        Seattle Office as a Software Engineer Intern.
       </Txt>
 
       <NavLinks className={style.HeaderNav} />

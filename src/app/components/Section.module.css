@@ -22,8 +22,8 @@
 }
 
 .SectionDescription {
-  flex: 1 0 240px;
-  max-width: 500px;
+  flex: 3 0 0;
+  max-width: var(--section-content-width);
   text-wrap: balance;
 
   & p {
@@ -32,9 +32,11 @@
 }
 
 .SectionContent {
-  flex: 5 0 75%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 2 1 0;
   max-width: var(--section-content-width);
-  /* margin: -16px -20px; */
 }
 
 .SectionDescriptionButtonRow {
