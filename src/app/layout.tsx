@@ -13,7 +13,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Max Steele / Full-Stack Engineer",
+  title: "Max Steele / SWE",
   description: "Author",
 };
 

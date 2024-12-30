@@ -54,7 +54,7 @@ export const Header: React.FC<React.ComponentProps<"header">> = ({
           Pacific Northwest National Laboratory
         </Link>
         {"'s "}
-        Seattle Office as a Software Engineer Intern.
+        Seattle Office.
       </Txt>
 
       <NavLinks className={style.HeaderNav} />

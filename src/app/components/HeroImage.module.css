@@ -14,6 +14,8 @@
 }
 
 .ImageLayer {
+  max-width: 80vw;
+  object-fit: contain;
   position: absolute;
   inset: 0;
   border-radius: var(--border-radius-image);
