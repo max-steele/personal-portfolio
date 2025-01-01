@@ -13,6 +13,7 @@ export default function Home() {
         <ProjectFeatureSection {...sections.about} />
         <ProjectFeatureSection {...sections.pnnl} />
         <ProjectFeatureSection {...sections.dhsWIRED} />
+        <ProjectFeatureSection {...sections.contact} />
       </main>
       <Footer />
     </div>

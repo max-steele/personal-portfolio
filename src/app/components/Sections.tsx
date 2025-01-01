@@ -17,9 +17,9 @@ import {
 } from "./SectionDescription";
 import { HeroImage, HeroImageProps } from "./HeroImage";
 import { Txt } from "./Text";
+import { Spacer } from "./Spacer";
 import Link from "next/link";
 import React from "react";
-import { Spacer } from "./Spacer";
 
 export const ProjectFeatureSection: React.FC<
   React.ComponentProps<"div"> & {
@@ -49,7 +49,7 @@ export type ProjectFeatureSectionProps = React.ComponentProps<
 const about: ProjectFeatureSectionProps = {
   sectionDescriptionProps: {
     label: "Background",
-    header: "About",
+    header: "About Me",
     description: (
       <>
         <Txt tag="p" fg={2} className={style.HeaderDetails}>
@@ -65,7 +65,7 @@ const about: ProjectFeatureSectionProps = {
           <Link href={"https://www.pnnl.gov/"} target="_blank">
             Pacific Northwest National Laboratory
           </Link>
-          , working on designing & deploying web applications for data
+          , tasked with designing & deploying web applications for data
           visualization, biosecurity, and machine learning for federal government agencies. 
           Currently focused on full-stack web development, data visualization, and natural language processing.
         </Txt>
@@ -97,23 +97,23 @@ const pnnl: ProjectFeatureSectionProps = {
     description: (
       <>
         <Txt tag="p" fg={2} className={style.HeaderDetails}>
-          My work at PNNL spans data science, natural language processing, UX design,
-          and cloud infrastructure. My main accomplishments have been in developing 
-          dynamic visualization experiences on the web. 
+          During my time at PNNL, I have contributed to projects spanning data science, natural language processing, UI/UX design, and cloud infrastructure. 
+          My primary achievements have been in developing dynamic visualization experiences on the web.
         </Txt>
         <Spacer />
         <Txt tag="p" fg={2} className={style.HeaderDetails}>
-          Through collaboration with a team of seasoned data scientists and UI/UX designers,
-          I spearheaded design & development of a unified, interactive interface for{" "}
+          In collaboration with a team of seasoned data scientists and UX designers, 
+          I led the design & development of an interactive, unified interface for{" "}
           <Link href={"https://www.ibm.com/think/topics/topic-modeling#:~:text=In%20natural%20language%20processing%20(NLP,overall%20primary%20set%20of%20topics."} target="_blank">
             topic modeling
           </Link>{" "}
-          analytics within a React-based web application. 
+          analytics. This enables analysts to explore complex textual relationships with precision.
         </Txt>
         <Spacer />
         <Txt tag="p" fg={2} className={style.HeaderDetails}>
-          This work was sponsored by federal government agencies, including the Department of Defense
-          and the Department of Homeland Security. (See below for further work within this sector).
+          This work is commissioned by federal government agencies, including the Department 
+          of Defense and the Department of Homeland Security. (See below for further details on my contributions 
+          within this sector.)
         </Txt>
       </>
     ),
@@ -159,7 +159,7 @@ const dhsWIRED: ProjectFeatureSectionProps = {
           <Link href={"https://www.pnnl.gov/foundational-data-science"} legacyBehavior>
             <a target="_blank" rel="noopener noreferrer">Foundational Data Science Group</a>
           </Link>,
-          a division of PNNL&apos;s National Security Directorate. My work included a hearty mix of software engineering
+          a division of PNNL&apos;s National Security Directorate. My work included a mix of software engineering
           and data science.
         </Txt>
         <Spacer />
@@ -168,8 +168,12 @@ const dhsWIRED: ProjectFeatureSectionProps = {
           <Link href="/media/DHS/GoldExperience.pdf" legacyBehavior>
             <a target="_blank" rel="noopener noreferrer">Gold Experience</a>
           </Link>{" "}
-          development program, where I presented my progress over 10 weeks. This was an invaluable experience. 
-          The work is outlined in the project report linked below.
+          development program, where I showcased my contributions over 10 weeks. 
+        </Txt>
+        <Spacer />
+        <Txt tag="p" fg={2} className={style.HeaderDetails}>
+          The work is detailed in the project report linked below, which outlines the challenges addressed
+          and the broader impact of the work at PNNL.
         </Txt>
       </>
     ),
@@ -184,8 +188,30 @@ const dhsWIRED: ProjectFeatureSectionProps = {
   },
 };
 
+const contact: ProjectFeatureSectionProps = {
+  sectionDescriptionProps: {
+    header: "Contact Me",
+    links: [
+      {
+        href: "mailto:msteele1@uw.edu",
+        children: "Email",
+        type: "outline",
+        external: true
+      }
+    ],
+    description: (
+      <>
+        <Txt tag="p" fg={2} className={style.HeaderDetails}>
+          I&apos;d love to hear about your opportunity.
+        </Txt>
+      </>
+    ),
+  },
+};
+
 export const sections = {
   about,
   pnnl,
   dhsWIRED,
+  contact
 };
