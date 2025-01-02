@@ -39,7 +39,7 @@ const links = [
   },
   {
     children: "Resume",
-    href: "/media/Resume/Resume-Maxwell-Steele.pdf",
+    href: "/media/Resume/Resume.pdf",
     external: true,
     prefetch: false,
   },
