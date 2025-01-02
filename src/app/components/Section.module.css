@@ -48,6 +48,28 @@
   /* margin-left: -16px; */
 }
 
+.RowContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 2rem;
+}
+
+.GridGroup {
+  flex: 1 1 auto;
+  max-width: 300px;
+  text-align: left;
+}
+
+.GridContainer {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  display: 'flex';
+  align-items: left;
+  justify-items: left;
+}
 
 /* ---- */
 

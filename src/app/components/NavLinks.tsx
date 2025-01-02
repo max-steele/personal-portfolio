@@ -43,4 +43,10 @@ const links = [
     external: true,
     prefetch: false,
   },
+  {
+    children: "Contact",
+    href: "mailto:msteele1@uw.edu",
+    external: true,
+    prefetch: false,
+  },
 ];

@@ -52,7 +52,7 @@ const about: ProjectFeatureSectionProps = {
     header: "About Me",
     description: (
       <>
-        <Txt tag="p" fg={2} className={style.HeaderDetails}>
+        <Txt tag="p" fg={2} className={style.SectionDescription}>
           I am an undergraduate student at the University of Washington&apos;s{" "}
           <Link href={"https://www.cs.washington.edu/"} target="_blank">
             Paul G. Allen School of Computer Science & Engineering
@@ -60,7 +60,7 @@ const about: ProjectFeatureSectionProps = {
           in Seattle, Washington, pursuing B.S. in Computer Science.
         </Txt>
         <Spacer />
-        <Txt tag="p" fg={2} className={style.HeaderDetails}>
+        <Txt tag="p" fg={2} className={style.SectionDescription}>
           In addition to full-time studies, I am working at{" "}
           <Link href={"https://www.pnnl.gov/"} target="_blank">
             Pacific Northwest National Laboratory
@@ -96,24 +96,29 @@ const pnnl: ProjectFeatureSectionProps = {
     header: "Pacific Northwest National Laboratory (PNNL)",
     description: (
       <>
-        <Txt tag="p" fg={2} className={style.HeaderDetails}>
-          During my time at PNNL, I have contributed to projects spanning data science, natural language processing, UI/UX design, and cloud infrastructure. 
+        <Txt tag="p" fg={2} className={style.SectionDescription}>
+          My work at PNNL spans data science, natural language processing, UI/UX design, and cloud infrastructure. 
           My primary achievements have been in developing dynamic visualization experiences on the web.
         </Txt>
         <Spacer />
-        <Txt tag="p" fg={2} className={style.HeaderDetails}>
-          In collaboration with a team of seasoned data scientists and UX designers, 
-          I led the design & development of an interactive, unified interface for{" "}
+        <Txt tag="p" fg={2} className={style.SectionDescription}>
+          In collaboration with a team of seasoned data scientists and UX designers,
+          I currently lead the design & iterative development of an interactive interface for{" "}
           <Link href={"https://www.ibm.com/think/topics/topic-modeling#:~:text=In%20natural%20language%20processing%20(NLP,overall%20primary%20set%20of%20topics."} target="_blank">
             topic modeling
           </Link>{" "}
-          analytics. This enables analysts to explore complex textual relationships with precision.
+          analytics, with the goal of enabling biosecurity analysts to explore complex textual relationships
+          with precision. It features Airbnb&apos;s{" "}
+          <Link href={"https://airbnb.io/visx/"} target="_blank">
+            Visx
+          </Link>{" "}
+          library and React best-practices to provide an intuitive data-driven representation on the web.
         </Txt>
         <Spacer />
-        <Txt tag="p" fg={2} className={style.HeaderDetails}>
+        <Txt tag="p" fg={2} className={style.SectionDescription}>
           This work is commissioned by federal government agencies, including the Department 
-          of Defense and the Department of Homeland Security. (See below for further details on my contributions 
-          within this sector.)
+          of Defense and the Department of Homeland Security. See below for further details on my contributions 
+          within this sector.
         </Txt>
       </>
     ),
@@ -150,12 +155,13 @@ const dhsWIRED: ProjectFeatureSectionProps = {
     ],
     description: (
       <>
-        <Txt tag="p" fg={2} className={style.HeaderDetails}>
+        <Txt tag="p" fg={2} className={style.SectionDescription}>
           During Summer 2024, I participated in the{" "} 
           <Link href={"https://www.pnnl.gov/dhs-wired-internships"} legacyBehavior>
             <a target="_blank" rel="noopener noreferrer">DHS-WIRED Internship Program</a>
           </Link>
-          , administered by PNNL. I was assigned to a multi-year project in the{" "}
+          , a National Security development program administered by PNNL. 
+          I was assigned to a multi-year project in the{" "}
           <Link href={"https://www.pnnl.gov/foundational-data-science"} legacyBehavior>
             <a target="_blank" rel="noopener noreferrer">Foundational Data Science Group</a>
           </Link>,
@@ -163,7 +169,7 @@ const dhsWIRED: ProjectFeatureSectionProps = {
           and data science.
         </Txt>
         <Spacer />
-        <Txt tag="p" fg={2} className={style.HeaderDetails}>
+        <Txt tag="p" fg={2} className={style.SectionDescription}>
           This included a presentation at PNNL&apos;s Research Symposium in August of 2024, part of the{" "}
           <Link href="/media/DHS/GoldExperience.pdf" legacyBehavior>
             <a target="_blank" rel="noopener noreferrer">Gold Experience</a>
@@ -171,7 +177,7 @@ const dhsWIRED: ProjectFeatureSectionProps = {
           development program, where I showcased my contributions over 10 weeks. 
         </Txt>
         <Spacer />
-        <Txt tag="p" fg={2} className={style.HeaderDetails}>
+        <Txt tag="p" fg={2} className={style.SectionDescription}>
           The work is detailed in the project report linked below, which outlines the challenges addressed
           and the broader impact of the work at PNNL.
         </Txt>
@@ -190,20 +196,98 @@ const dhsWIRED: ProjectFeatureSectionProps = {
 
 const contact: ProjectFeatureSectionProps = {
   sectionDescriptionProps: {
-    header: "Contact Me",
-    links: [
-      {
-        href: "mailto:msteele1@uw.edu",
-        children: "Email",
-        type: "outline",
-        external: true
-      }
-    ],
+    label: "Dev Skills",
     description: (
       <>
-        <Txt tag="p" fg={2} className={style.HeaderDetails}>
-          I&apos;d love to hear about your opportunity.
-        </Txt>
+        <Spacer />
+        <div className={style.RowContainer}>
+          <div className={style.GridGroup}>
+            <Txt tag="p" size={4} fg={2} className={style.SectionDescription}>
+              <b>Languages</b>
+            </Txt>
+            <Spacer />
+            <Txt size={4} fg={2} className={style.SectionDescription}>
+              <div className={style.GridContainer}>
+                <div>
+                  <i className="devicon-javascript-plain"></i> JavaScript
+                </div>
+                <div>
+                  <i className="devicon-typescript-plain"></i> TypeScript
+                </div>
+                <div>
+                  <i className="devicon-python-plain"></i> Python
+                </div>
+                <div>
+                  <i className="devicon-java-plain"></i> Java
+                </div>
+                <div>
+                  <i className="devicon-html5-plain"></i> HTML5
+                </div>
+                <div>
+                  <i className="devicon-css3-plain"></i> CSS
+                </div>
+              </div>
+            </Txt>
+          </div>
+
+          <div className={style.GridGroup}>
+            <Txt tag="p" size={4} fg={2} className={style.SectionDescription}>
+              <b>Frameworks & Build Tools</b>
+            </Txt>
+            <Spacer />
+            <Txt size={4} fg={2} className={style.SectionDescription}>
+              <div className={style.GridContainer}>
+                <div>
+                  <i className="devicon-react-original"></i> React.js
+                </div>
+                <div>
+                  <i className="devicon-nodejs-plain"></i> Node.js
+                </div>
+                <div>
+                  <i className="devicon-npm-original-wordmark"></i> NPM
+                </div>
+                <div>
+                  <i className="devicon-materialui-plain"></i> Material UI
+                </div>
+                <div>
+                  <i className="devicon-flask-original"></i> Flask
+                </div>
+                <div>
+                  <i className="devicon-docker-plain"></i> Docker
+                </div>
+              </div>
+            </Txt>
+          </div>
+
+          <div className={style.GridGroup}>
+            <Txt tag="p" size={4} fg={2} className={style.SectionDescription}>
+              <b>Technologies</b>
+            </Txt>
+            <Spacer />
+            <Txt size={4} fg={2} className={style.SectionDescription}>
+              <div className={style.GridContainer}>
+                <div>
+                  <i className="devicon-git-plain"></i> Git
+                </div>
+                <div>
+                  <i className="devicon-gitlab-plain"></i> GitLab
+                </div>
+                <div>
+                  <i className="devicon-jira-plain"></i> Jira
+                </div>
+                <div>
+                  <i className="devicon-amazonwebservices-plain-wordmark"></i> AWS
+                </div>
+                <div>
+                  <i className="devicon-graphql-plain"></i> GraphQL
+                </div>
+                <div>
+                  <i className="devicon-vscode-plain"></i> VSCode
+                </div>
+              </div>
+            </Txt>
+          </div>
+        </div>
       </>
     ),
   },

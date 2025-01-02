@@ -45,7 +45,7 @@ export const Header: React.FC<React.ComponentProps<"header">> = ({
       </Txt>
 
       <Txt tag="p" fg={2} className={style.HeaderDetails}>
-        Undergraduate student at the University of Washington with professional software development experience. 
+        Highly organized and adaptable undergraduate student at the University of Washington with professional software development experience. 
         Currently working at {" "}
         <Link href={"https://www.pnnl.gov/"} {...external}>
           Pacific Northwest National Laboratory
