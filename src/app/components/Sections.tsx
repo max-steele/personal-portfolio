@@ -97,18 +97,23 @@ const pnnl: ProjectFeatureSectionProps = {
     description: (
       <>
         <Txt tag="p" fg={2} className={style.SectionDescription}>
-          My work at PNNL spans data science, natural language processing, UI/UX design, and cloud infrastructure. 
+          I am currently working as a software engineer in the{" "}
+          <Link href={"https://www.pnnl.gov/foundational-data-science"} target={"_blank"}>
+            Foundational Data Science
+          </Link>{" "}
+          group at PNNL. 
+          My work spans data science, natural language processing, UI/UX design, and cloud infrastructure. 
           My primary achievements have been in developing dynamic visualization experiences on the web.
         </Txt>
         <Spacer />
         <Txt tag="p" fg={2} className={style.SectionDescription}>
-          In collaboration with a team of seasoned data scientists and UX designers,
           I currently lead the design & iterative development of an interactive interface for{" "}
           <Link href={"https://www.ibm.com/think/topics/topic-modeling#:~:text=In%20natural%20language%20processing%20(NLP,overall%20primary%20set%20of%20topics."} target="_blank">
             topic modeling
           </Link>{" "}
-          analytics, with the goal of enabling biosecurity analysts to explore complex textual relationships
-          with precision. It features Airbnb&apos;s{" "}
+          (an NLP-powered analytic) alongside a team of seasoned data scientists and UX designers.
+          The feature aims to enable the explorational of complex textual relationships
+          with precision, a historically complicated task. It features Airbnb&apos;s{" "}
           <Link href={"https://airbnb.io/visx/"} target="_blank">
             Visx
           </Link>{" "}
@@ -157,22 +162,22 @@ const dhsWIRED: ProjectFeatureSectionProps = {
       <>
         <Txt tag="p" fg={2} className={style.SectionDescription}>
           During Summer 2024, I participated in the{" "} 
-          <Link href={"https://www.pnnl.gov/dhs-wired-internships"} legacyBehavior>
-            <a target="_blank" rel="noopener noreferrer">DHS-WIRED Internship Program</a>
+          <Link href={"https://www.pnnl.gov/dhs-wired-internships"} target={"_blank"}>
+            DHS-WIRED Internship Program
           </Link>
           , a National Security development program administered by PNNL. 
           I was assigned to a multi-year project in the{" "}
-          <Link href={"https://www.pnnl.gov/foundational-data-science"} legacyBehavior>
-            <a target="_blank" rel="noopener noreferrer">Foundational Data Science Group</a>
+          <Link href={"https://www.pnnl.gov/ai-and-data-analytics-research"} target={"_blank"}>
+            AI and Data Analytics Division
           </Link>,
-          a division of PNNL&apos;s National Security Directorate. My work included a mix of software engineering
+          part of PNNL&apos;s National Security Directorate. My work included a mix of software engineering
           and data science.
         </Txt>
         <Spacer />
         <Txt tag="p" fg={2} className={style.SectionDescription}>
           This included a presentation at PNNL&apos;s Research Symposium in August of 2024, part of the{" "}
-          <Link href="/media/DHS/GoldExperience.pdf" legacyBehavior>
-            <a target="_blank" rel="noopener noreferrer">Gold Experience</a>
+          <Link href="/media/DHS/GoldExperience.pdf" target={"_blank"}>
+            Gold Experience
           </Link>{" "}
           development program, where I showcased my contributions over 10 weeks. 
         </Txt>

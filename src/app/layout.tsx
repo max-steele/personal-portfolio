@@ -25,8 +25,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <meta name="apple-mobile-web-app-title" content="steele.digital" />
+        <title>Max Steele / University of Washington & PNNL</title>
+        <meta name="description" content="Maxwell Steele is an undergraduate Computer Science student at the University of Washington and a 
+        full-stack software engineering intern in the Foundational Data Science group at Pacific Northwest National Laboratory in Seattle, Washington." />
         <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+        <meta name="next-size-adjust" />
       </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
