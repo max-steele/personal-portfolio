@@ -111,13 +111,13 @@ const pnnl: ProjectFeatureSectionProps = {
           <Link href={"https://www.ibm.com/think/topics/topic-modeling#:~:text=In%20natural%20language%20processing%20(NLP,overall%20primary%20set%20of%20topics."} target="_blank">
             topic modeling
           </Link>{" "}
-          (an NLP-powered analytic) alongside a team of seasoned data scientists and UX designers.
+          (an NLP-powered method) alongside a team of seasoned data scientists and UX designers.
           The feature aims to enable the explorational of complex textual relationships
           with precision, a historically complicated task. It features Airbnb&apos;s{" "}
           <Link href={"https://airbnb.io/visx/"} target="_blank">
             Visx
           </Link>{" "}
-          library and React best-practices to provide an intuitive data-driven representation on the web.
+          library and React best-practices to provide a fast and intuitive data-driven representation on the web.
         </Txt>
         <Spacer />
         <Txt tag="p" fg={2} className={style.SectionDescription}>
@@ -170,7 +170,7 @@ const dhsWIRED: ProjectFeatureSectionProps = {
           <Link href={"https://www.pnnl.gov/ai-and-data-analytics-research"} target={"_blank"}>
             AI and Data Analytics Division
           </Link>,
-          part of PNNL&apos;s National Security Directorate. My work included a mix of software engineering
+          part of PNNL&apos;s National Security Directorate. My work included software engineering
           and data science.
         </Txt>
         <Spacer />

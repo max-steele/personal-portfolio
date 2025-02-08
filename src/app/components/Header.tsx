@@ -29,9 +29,6 @@ export const Header: React.FC<React.ComponentProps<"header">> = ({
 
       <Txt tag="h1" size={1} fg={1} uppercase className={style.HeaderText} bold>
         <Txt>Maxwell Steele</Txt>
-        <Spacer normal>/</Spacer>
-        <wbr />
-        <Txt fg={3}>Full-Stack Engineer</Txt>
       </Txt>
 
       <Txt tag="p" fg={2} className={style.HeaderDetails}>
