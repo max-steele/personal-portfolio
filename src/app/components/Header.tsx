@@ -1,12 +1,15 @@
 import Link from "next/link";
+
+import style from "./Header.module.css";
+import styleSection from "./Section.module.css";
+
 import { externalLinkAttributes as external } from "../utils/link";
 import { Txt } from "../components/Text";
 import { Spacer } from "../components/Spacer";
 import { cx } from "../utils/joinClassNames";
 import { NavLinks } from "./NavLinks";
-import style from "./Header.module.css";
-import styleSection from "./Section.module.css";
 import { Logo } from "./Logo";
+import { MagneticTxt } from "./MagneticTxt";
 
 export const Header: React.FC<React.ComponentProps<"header">> = ({
   className,
@@ -27,9 +30,18 @@ export const Header: React.FC<React.ComponentProps<"header">> = ({
         }}
       />
 
-      <Txt tag="h1" size={1} fg={1} uppercase className={style.HeaderText} bold>
-        <Txt>Maxwell Steele</Txt>
-      </Txt>
+      <MagneticTxt
+        tag="h1"
+        size={1}
+        fg={1}
+        uppercase
+        className={style.HeaderText}
+        bold
+        offsetPx={30} // Increase to make letters move more aggressively toward the mouse.
+        duration={0.3} // Lower for a snappier response, higher for smoother motion.
+      >
+        Maxwell Steele
+      </MagneticTxt>
 
       <Txt tag="p" fg={2} className={style.HeaderDetails}>
         <Txt bold fg={2}>

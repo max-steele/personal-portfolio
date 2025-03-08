@@ -39,7 +39,7 @@ const links = [
   },
   {
     children: "Resume",
-    href: "/media/Resume/Resume.pdf",
+    href: "/media/resume.pdf",
     external: true,
     prefetch: false,
   },
