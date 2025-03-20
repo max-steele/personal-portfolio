@@ -103,7 +103,7 @@ const pnnl: ProjectFeatureSectionProps = {
           </Link>{" "}
           group at PNNL. 
           My work spans data science, natural language processing, UI/UX design, and cloud infrastructure. 
-          My primary achievements have been in developing dynamic visualization experiences on the web.
+          My primary achievements have been in developing dynamic visualization experiences for AI/ML driven analytics on the web.
         </Txt>
         <Spacer />
         <Txt tag="p" fg={2} className={style.SectionDescription}>
@@ -111,9 +111,9 @@ const pnnl: ProjectFeatureSectionProps = {
           <Link href={"https://www.ibm.com/think/topics/topic-modeling#:~:text=In%20natural%20language%20processing%20(NLP,overall%20primary%20set%20of%20topics."} target="_blank">
             topic modeling
           </Link>{" "}
-          (an NLP-powered method) alongside a team of seasoned data scientists and UX designers.
+          alongside a team of seasoned data scientists and UX designers.
           The feature aims to enable the explorational of complex textual relationships
-          with precision, a historically complicated task. It features Airbnb&apos;s{" "}
+          with precision. It features Airbnb&apos;s{" "}
           <Link href={"https://airbnb.io/visx/"} target="_blank">
             Visx
           </Link>{" "}
@@ -170,8 +170,8 @@ const dhsWIRED: ProjectFeatureSectionProps = {
           <Link href={"https://www.pnnl.gov/ai-and-data-analytics-research"} target={"_blank"}>
             AI and Data Analytics Division
           </Link>,
-          part of PNNL&apos;s National Security Directorate. My work included software engineering
-          and data science.
+          part of PNNL&apos;s National Security Directorate. I collaborated with software engineers and data scientists on the team 
+          to develop client-facing features on a web interface.
         </Txt>
         <Spacer />
         <Txt tag="p" fg={2} className={style.SectionDescription}>
@@ -226,10 +226,10 @@ const contact: ProjectFeatureSectionProps = {
                   <i className="devicon-java-plain"></i> Java
                 </div>
                 <div>
-                  <i className="devicon-html5-plain"></i> HTML5
+                  <i className="devicon-c-plain"></i> C
                 </div>
                 <div>
-                  <i className="devicon-css3-plain"></i> CSS
+                  <i className="devicon-html5-plain"></i> HTML5/CSS
                 </div>
               </div>
             </Txt>
@@ -281,13 +281,13 @@ const contact: ProjectFeatureSectionProps = {
                   <i className="devicon-jira-plain"></i> Jira
                 </div>
                 <div>
+                  <i className="devicon-confluence-plain"></i> Confluence
+                </div>
+                <div>
                   <i className="devicon-amazonwebservices-plain-wordmark"></i> AWS
                 </div>
                 <div>
                   <i className="devicon-graphql-plain"></i> GraphQL
-                </div>
-                <div>
-                  <i className="devicon-vscode-plain"></i> VSCode
                 </div>
               </div>
             </Txt>

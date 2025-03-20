@@ -9,7 +9,6 @@ import { Spacer } from "../components/Spacer";
 import { cx } from "../utils/joinClassNames";
 import { NavLinks } from "./NavLinks";
 import { Logo } from "./Logo";
-import { MagneticTxt } from "./MagneticTxt";
 
 export const Header: React.FC<React.ComponentProps<"header">> = ({
   className,
@@ -30,18 +29,16 @@ export const Header: React.FC<React.ComponentProps<"header">> = ({
         }}
       />
 
-      <MagneticTxt
+      <Txt
         tag="h1"
         size={1}
         fg={1}
         uppercase
         className={style.HeaderText}
         bold
-        offsetPx={30} // Increase to make letters move more aggressively toward the mouse.
-        duration={0.3} // Lower for a snappier response, higher for smoother motion.
       >
         Maxwell Steele
-      </MagneticTxt>
+      </Txt>
 
       <Txt tag="p" fg={2} className={style.HeaderDetails}>
         <Txt bold fg={2}>
