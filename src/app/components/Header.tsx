@@ -1,7 +1,6 @@
 import Link from "next/link";
 
 import style from "./Header.module.css";
-import styleSection from "./Section.module.css";
 
 import { externalLinkAttributes as external } from "../utils/link";
 import { Txt } from "../components/Text";
@@ -15,10 +14,10 @@ export const Header: React.FC<React.ComponentProps<"header">> = ({
   ...props
 }) => (
   <header
-    className={cx(style.HeaderWrapper, styleSection.SectionWrapper, className)}
+    className={className}
     {...props}
   >
-    <div className={cx(style.HeaderLayout, styleSection.Section)}>
+    <div className={cx(style.HeaderLayout)}>
       <Logo
         style={{
           marginBottom: 48,
@@ -42,11 +41,9 @@ export const Header: React.FC<React.ComponentProps<"header">> = ({
 
       <Txt tag="p" fg={2} className={style.HeaderDetails}>
         <Txt bold fg={2}>
-          Front-End Development
+          Software Engineer
           <Spacer>/</Spacer>
-          Web API Development
-          <Spacer>/</Spacer>
-          UI Development
+          Student
         </Txt>
       </Txt>
 

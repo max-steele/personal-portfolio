@@ -1,4 +1,8 @@
+.Layout {
+  padding: 16px;
+}
+
 .SectionLayout {
   background-color: var(--background-color-1);
-  --section-content-width: 1000px;
+  --section-content-width: var(--column-max);
 }

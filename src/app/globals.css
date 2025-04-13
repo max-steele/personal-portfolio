@@ -16,9 +16,9 @@
   --border-2: 1px solid var(--border-color-2);
 
   --foreground-color-1: hsl(0, 0%, 0%);
-  --foreground-color-2: hsl(0, 0%, 24%);
-  --foreground-color-3: hsl(0, 0%, 44%); 
-  --foreground-color-4: hsl(0, 0%, 75%);
+  --foreground-color-2: hsl(0, 0%, 20%);
+  --foreground-color-3: hsl(0, 0%, 45%); 
+  --foreground-color-4: hsl(0, 0%, 65%);
 
   /* --foreground-color-1: hsl(0, 0%, 0%);
   --foreground-color-3: hsl(0, 0%, 18%); 
@@ -32,8 +32,9 @@
   --font-size-2: 24px;
   --font-size-3: 18px;
   --font-size-4: 16px;
-  --font-size-5: 14px;
-  --font-size-6: 12px;
+  --font-size-5: 15px;
+  --font-size-6: 14px;
+  --font-size-7: 12px;
 
   --line-height: 1.4;
 
@@ -50,10 +51,9 @@
   --box-shadow-3: var(--box-shadow-outline), 0 2px 4px var(--box-shadow-color), 0 8px 24px var(--box-shadow-color);
   --box-shadow-4: var(--box-shadow-outline), 0 4px 8px var(--box-shadow-color), 0 18px 46px 6px var(--box-shadow-color);
 
-  --column-max: 1600px;
-  --column-full: 1080px;
+  --column-max: 1000px;
   --column-text: 720px;
-  --column-padding: 48px
+  --column-padding: 16px;
 
 }
 
@@ -96,7 +96,7 @@ html {
   font-weight: var(--font-weight-normal);
   font-size: var(--font-size-5);
   color: var(--foreground-color-2);
-  background-color: var(--background-color-2);
+  background-color: var(--background-color-1);
   /* text-wrap: balance; */
   text-wrap: pretty;
 
@@ -144,7 +144,7 @@ body {
 }
 
 a {
-  color: var(--foreground-color-1);
+  color: inherit;
   text-decoration-color: var(--foreground-color-3);
 
   &:hover {

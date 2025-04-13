@@ -9,8 +9,8 @@ export type TxtProps = HTMLAttributes<HTMLOrSVGElement> & {
   /** color, foreground: 1 is darkest, 4 is lightest, 2 is default */
   fg?: 1 | 2 | 3 | 4;
 
-  /** text-size: 1 is largest, 6 is smallest, 5 is default */
-  size?: 1 | 2 | 3 | 4 | 5 | 6;
+  /** text-size: 1 is largest, 7 is smallest, 5 is default */
+  size?: 1 | 2 | 3 | 4 | 5 | 6 | 7;
 
   /** font-weight: bold;  */
   bold?: boolean;

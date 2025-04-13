@@ -1,24 +1,17 @@
 .SectionWrapper {
-  border-bottom: var(--border-1);
   overflow: visible;
-}
-
-.SectionInteractive {
-  transition: background-color 500ms linear;
-  &:hover{
-    background-color: var(--background-color-2);
-  }
+  margin-bottom: 3rem;
 }
 
 .Section {
   margin: 0 auto;
   max-width: var(--column-max);
-  padding: var(--column-padding);
 }
 
-.SectionDescriptionImage{
-  width: 24px;
-  margin-bottom: 24px;
+.SectionHeader {
+  & h2 {
+    margin: 0;
+  }
 }
 
 .SectionDescription {
@@ -26,18 +19,13 @@
   min-width: 40%;
   max-width: var(--section-content-width);
   text-wrap: balance;
+  border-top: var(--border-1);
+  margin-top: 8px;
+  padding: 8px 0 0 0;
 
   & p {
     margin: 0 0;
   }
-}
-
-.SectionContent {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex: 0 1 auto;
-  max-width: var(--section-content-width);
 }
 
 .SectionDescriptionButtonRow {
@@ -45,7 +33,35 @@
   display: flex;
   gap: 8px;
   margin: 12px 0;
-  /* margin-left: -16px; */
+}
+
+.Skills {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-top: 8px;
+  width: 100%;
+  gap: 16px;
+}
+
+.Skills ul {
+  list-style-type: square;
+  padding-left: 20px;
+  margin: 0;
+}
+
+.Skills li {
+  margin-bottom: 8px;
+}
+
+.Skills li::marker {
+  color: var(--foreground-color-2);
+  font-size: 1.2em;
+}
+
+.Skills li i {
+  margin-right: 8px;
+  font-size: 1.2em;
 }
 
 .RowContainer {
@@ -54,10 +70,13 @@
   justify-content: space-between;
   align-items: flex-start;
   gap: 2rem;
+  width: 100%;
 }
 
 .GridGroup {
+  display: flex;
   flex: 1 1 auto;
+  flex-direction: column;
   max-width: 300px;
   text-align: left;
 }
@@ -69,28 +88,4 @@
   display: 'flex';
   align-items: left;
   justify-items: left;
-}
-
-/* ---- */
-
-.ProjectsSection {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  gap: 24px 64px;
-}
-
-.ProjectLinkList {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 2px;
-  margin: -16px -20px;
-  max-width: calc(var(--section-content-width) + 40px);
-
-  align-items: flex-start;
-}
-
-.ProjectLink {
-  flex: 1 1 33%;
-  min-width: 300px;
 }
