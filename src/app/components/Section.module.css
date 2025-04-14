@@ -22,10 +22,10 @@
   border-top: var(--border-1);
   margin-top: 8px;
   padding: 8px 0 0 0;
+}
 
-  & p {
-    margin: 0 0;
-  }
+.SectionDescription p {
+  margin: 0 0;
 }
 
 .SectionDescriptionButtonRow {
