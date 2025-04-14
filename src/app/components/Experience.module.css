@@ -1,11 +1,9 @@
-.ExperienceMetadata {
-  & h1 {
-    margin: 8px 0 0 0;
-  }
-  
-  & h3  {
-    margin: 8px 0;
-  }
+.ExperienceMetadata h1 {
+  margin: 8px 0 0 0;
+}
+
+.ExperienceMetadata h3 {
+  margin: 8px 0;
 }
 
 .ExperienceDescription {
@@ -14,8 +12,8 @@
   max-width: var(--section-content-width);
   text-wrap: balance;
   padding-top: 4px;
+}
 
-  & p {
-    margin: 6px 0;
-  }
+.ExperienceDescription p {
+  margin: 6px 0;
 }
