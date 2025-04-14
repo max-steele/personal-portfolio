@@ -20,7 +20,7 @@ export const ThemeToggle: React.FC<React.ComponentProps<"button">> = ({
       {...props}
     >
       <Txt fg={2}>
-        {theme === "light" ? "☀️" : "🌙"}
+        <span>{theme === "light" ? "☀️" : "🌙"}</span>
       </Txt>
     </button>
   );
