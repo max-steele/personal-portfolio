@@ -3,6 +3,7 @@ import style from "./NavLinks.module.css";
 import { LinkButton } from "../components/LinkButton";
 import { Txt } from "../components/Text";
 import { Fragment } from "react";
+import { ThemeToggle } from "./ThemeToggle";
 
 export const NavLinks: React.FC<React.ComponentProps<"div"> & {}> = ({
   className,
@@ -23,6 +24,10 @@ export const NavLinks: React.FC<React.ComponentProps<"div"> & {}> = ({
         />
       </Fragment>
     ))}
+    <Txt fg={4} className={style.NavSpacer}>
+      /
+    </Txt>
+    <ThemeToggle />
   </nav>
 );
 

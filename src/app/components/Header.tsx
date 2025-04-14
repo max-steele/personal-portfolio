@@ -32,7 +32,6 @@ export const Header: React.FC<React.ComponentProps<"header">> = ({
         tag="h1"
         size={1}
         fg={1}
-        uppercase
         className={style.HeaderText}
         bold
       >

@@ -1,5 +1,6 @@
 import { cx } from "../utils/joinClassNames";
 import style from "./Experience.module.css";
+import { Spacer } from "./Spacer";
 
 import { Txt } from "./Text";
 import Link from "next/link";
@@ -66,21 +67,6 @@ const pnnl: ExperienceProps = {
         </Link>{" "}
         group at Pacific Northwest National Laboratory developing web applications for federal government agencies with a focus on AI/ML integration, data visualization, and cloud deployment.
       </Txt>
-      <Txt size={5} fg={2} tag="p">
-        Developing an interactive interface for dynamic {" "}
-        <Link href={"https://www.ibm.com/think/topics/topic-modeling#:~:text=In%20natural%20language%20processing%20(NLP,overall%20primary%20set%20of%20topics."} target="_blank">
-          topic modeling
-        </Link>{", "}
-        a natural language processing based analytic, using the open source{" "}
-        <Link href={"https://maartengr.github.io/BERTopic/index.html"} target="_blank">
-          BERTopic
-        </Link>{" "}
-        library and Airbnb&apos;s{" "}
-        <Link href={"https://airbnb.io/visx/"} target="_blank">
-          Visx
-        </Link>{" "}
-        data visualization grammar to visualize scientific literature.
-      </Txt>
     </>
   )
 };
@@ -88,7 +74,7 @@ const pnnl: ExperienceProps = {
 const dhs: ExperienceProps = {
   title: "DHS-WIRED Software Engineering Intern",
   organization: "Department of Homeland Security (PNNL)",
-  time: "June 2024 - Sept 2024",
+  time: "June 2024 - Aug 2024",
   location: "Seattle, WA",
   description: (
     <>
@@ -105,7 +91,7 @@ const dhs: ExperienceProps = {
         , part of PNNL&apos;s National Security Directorate (NSD).
       </Txt>
       <Txt size={5} fg={2} tag="p">
-        Conducted independent research on techniques and concepts used throughout the project, authored a technical abstract and project report. Delivered a formal presentation at PNNL&apos;s Research Symposium in August of 2024, part of the{" "}
+        Conducted independent research on techniques and concepts used throughout the project, authored a technical abstract and project report. Delivered a formal presentation at PNNL&apos;s Research Symposium in August 2024 as part of the{" "}
         <Link href="/media/DHS/GoldExperience.pdf" target={"_blank"}>
           Gold Experience
         </Link>{" "}
@@ -128,8 +114,14 @@ const gear_up: ExperienceProps = {
         </Link>{" "} (GEAR-UP) offers services to educational institutions and community partnerships to help students succeed in post-secondary education.
       </Txt>
       <Txt size={5} fg={2} tag="p">
-        As a peer mentor, I aided students in completing scholarship and financial aid applications, organized and administered college tours, and mentored students in applying for universities including the University of Washington and WSU.
-        As a student tutor, I supported students with high school curriculum and AP coursework and provided career-focused lessons for students.
+        <i>Peer Mentor</i>
+        <Spacer>/</Spacer>
+        Aided students in completing scholarship and financial aid applications, organized and administered college tours, and mentored students in applying for universities including the University of Washington and WSU.
+      </Txt>
+      <Txt size={5} fg={2} tag="p">
+        <i>Student Tutor</i>
+        <Spacer>/</Spacer>
+        Supported students with high school curriculum and AP coursework and provided career-focused lessons.
       </Txt>
     </>
   )
