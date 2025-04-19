@@ -11,7 +11,6 @@ import {
   uw 
 } from "./Experience";
 import { Txt } from "./Text";
-import { Spacer } from "./Spacer";
 import Link from "next/link";
 import React from "react";
 
@@ -45,16 +44,11 @@ const about: SectionProps = {
             <Link href={"https://www.cs.washington.edu/"} target="_blank">
               Paul G. Allen School of Computer Science & Engineering
             </Link>{" "}
-            in Seattle, Washington, pursuing B.S. in Computer Science.
-          </Txt>
-          <Spacer />
-          <Txt tag="p" fg={2}>
-            In addition to full-time studies, I am working at{" "}
+            in Seattle, Washington. Additionally, I&apos;m a software engineering intern at{" "}
             <Link href={"https://www.pnnl.gov/"} target="_blank">
               Pacific Northwest National Laboratory
             </Link>
-            , tasked with designing & deploying web applications for data
-            visualization, biosecurity, and machine learning for federal government agencies. 
+            , where I am developing web applications with a focus on data visualization, biosecurity, and machine learning. 
           </Txt>
         </>
       )
@@ -110,12 +104,12 @@ const skills: SectionProps = {
 
             <div className={style.GridGroup}>
               <Txt tag="p" size={4} fg={2} uppercase className={style.SectionHeader}>
-                <b>Tools</b>
+                <b>Frameworks & Tools</b>
               </Txt>
               <Txt size={4} fg={2} className={style.SectionDescription}>
                 <ul>
-                  <li>React.js</li>
-                  <li>Node.js</li>
+                  <li>React</li>
+                  <li>Node</li>
                   <li>Flask</li>
                   <li>Docker</li>
                   <li>Linux</li>

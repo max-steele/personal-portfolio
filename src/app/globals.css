@@ -6,33 +6,27 @@
   --font-weight-bold: 600;
 
   --background-color-1: hsl(0, 0%, 100%);
-  --background-color-2: hsl(0, 0%, 97%);
-  --background-color-3: hsl(0, 0%, 93%);
-  --background-color-4: hsl(0, 0%, 88%);
+  --background-color-2: hsl(0, 0%, 80%);
+  --background-color-3: hsl(0, 0%, 55%);
+  --background-color-4: hsl(0, 0%, 45%);
 
-  --border-color-1: hsl(0, 0%, 90%);
+  --border-color-1: hsl(0, 0%, 85%);
   --border-1: 1px solid var(--border-color-1);
   --border-color-2: hsla(0, 0%, 0%, 0.05);
   --border-2: 1px solid var(--border-color-2);
 
-  --foreground-color-1: hsl(0, 0%, 0%);
+  --foreground-color-1: hsl(0, 0%, 10%);
   --foreground-color-2: hsl(0, 0%, 20%);
   --foreground-color-3: hsl(0, 0%, 45%); 
   --foreground-color-4: hsl(0, 0%, 65%);
-
-  /* --foreground-color-1: hsl(0, 0%, 0%);
-  --foreground-color-3: hsl(0, 0%, 18%); 
-  --foreground-color-3: hsl(0, 0%, 35%); 
-  --foreground-color-4: hsl(0, 0%, 60%); */
-
 
   --accent-color-1: rgb(0, 0, 255);
 
   --font-size-1: 32px;
   --font-size-2: 24px;
-  --font-size-3: 18px;
+  --font-size-3: 19px;
   --font-size-4: 16px;
-  --font-size-5: 15px;
+  --font-size-5: 15.2px;
   --font-size-6: 14px;
   --font-size-7: 12px;
 
@@ -72,22 +66,22 @@
 :root.dark {
   color-scheme: dark;
 
-  --background-color-1: hsl(0, 0%, 15%);
-  --background-color-2: hsl(0, 0%, 30%);
+  --background-color-1: hsl(0, 0%, 10%);
+  --background-color-2: hsl(0, 0%, 20%);
   --background-color-3: hsl(0, 0%, 45%);
   --background-color-4: hsl(0, 0%, 65%);
 
-  --border-color-1: hsl(0, 0%, 10%);
+  --border-color-1: hsl(0, 0%, 25%);
   --border-1: 1px solid var(--border-color-1);
   --border-color-2: hsla(0, 0%, 100%, 0.05);
   --border-2: 1px solid var(--border-color-2);
 
-  --foreground-color-1: hsl(0, 0%, 100%);
-  --foreground-color-2: hsl(0, 0%, 75%);
-  --foreground-color-3: hsl(0, 0%, 53%);
-  --foreground-color-4: hsl(0, 0%, 25%);
+  --foreground-color-1: hsl(0, 0%, 95%);
+  --foreground-color-2: hsl(0, 0%, 80%);
+  --foreground-color-3: hsl(0, 0%, 55%);
+  --foreground-color-4: hsl(0, 0%, 45%);
   
-  --box-shadow-color: rgba(0, 0, 0, .5);
+  --box-shadow-color: rgba(92, 27, 27, 0.5);
 }
 
 html {
