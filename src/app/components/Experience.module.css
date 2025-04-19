@@ -11,9 +11,5 @@
   min-width: 40%;
   max-width: var(--section-content-width);
   text-wrap: balance;
-  padding-top: 4px;
-}
-
-.ExperienceDescription p {
-  margin: 6px 0;
+  padding-top: 8px;
 }

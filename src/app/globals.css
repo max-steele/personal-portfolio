@@ -17,8 +17,8 @@
 
   --foreground-color-1: hsl(0, 0%, 10%);
   --foreground-color-2: hsl(0, 0%, 20%);
-  --foreground-color-3: hsl(0, 0%, 45%); 
-  --foreground-color-4: hsl(0, 0%, 65%);
+  --foreground-color-3: hsl(0, 0%, 40%); 
+  --foreground-color-4: hsl(0, 0%, 60%);
 
   --accent-color-1: rgb(0, 0, 255);
 
@@ -68,8 +68,8 @@
 
   --background-color-1: hsl(0, 0%, 10%);
   --background-color-2: hsl(0, 0%, 20%);
-  --background-color-3: hsl(0, 0%, 45%);
-  --background-color-4: hsl(0, 0%, 65%);
+  --background-color-3: hsl(0, 0%, 40%);
+  --background-color-4: hsl(0, 0%, 60%);
 
   --border-color-1: hsl(0, 0%, 25%);
   --border-1: 1px solid var(--border-color-1);

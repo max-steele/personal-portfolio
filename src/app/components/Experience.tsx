@@ -42,13 +42,11 @@ export const Experience: React.FC<
         {location}
       </Txt>
     </div>
-    <div className={cx(className, style.ExperienceDescription)}>
-      {descriptions.map((description, index) => (
-        <div key={index}>
-          {description}
-        </div>
-      ))}
-    </div>
+    {descriptions.map((description, index) => (
+      <div key={index} className={cx(className, style.ExperienceDescription)}>
+        {description}
+      </div>
+    ))}
   </div>
 );
 
