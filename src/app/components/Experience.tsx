@@ -97,7 +97,7 @@ const dhs: ExperienceProps = {
       <>
         <Txt size={5} fg={2} tag="p">
           Developed UIs for scientific web interfaces in the
-          {" "}<Link href={"https://www.pnnl.gov/ai-and-data-analytics-research"} target={"_blank"}>
+          {" "}<Link href={"https://www.pnnl.gov/ai-and-data-analytics"} target={"_blank"}>
             AI and Data Analytics Division
           </Link>
           , part of PNNL&apos;s National Security Directorate. Independently researched formal techniques relevant to the project, primarily within the natural language processing domain. 
