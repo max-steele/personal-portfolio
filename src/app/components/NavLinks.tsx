@@ -24,9 +24,6 @@ export const NavLinks: React.FC<React.ComponentProps<"div"> & {}> = ({
         />
       </Fragment>
     ))}
-    <Txt fg={4} className={style.NavSpacer}>
-      /
-    </Txt>
     <ThemeToggle />
   </nav>
 );
