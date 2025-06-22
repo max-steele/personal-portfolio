@@ -3,10 +3,8 @@ import Link from "next/link";
 import style from "./Header.module.css";
 
 import { Txt } from "../components/Text";
-import { Spacer } from "../components/Spacer";
 import { cx } from "../utils/joinClassNames";
 import { Logo } from "./Logo";
-import { ThemeToggle } from "./ThemeToggle";
 
 export const Header: React.FC<React.ComponentProps<"header">> = ({
   className,
@@ -37,24 +35,14 @@ export const Header: React.FC<React.ComponentProps<"header">> = ({
         Maxwell Steele
       </Txt>
 
-      <Txt tag="p" fg={2} className={style.HeaderDetails}>
-        <Txt bold fg={2}>
-          Software Engineer
-          <Spacer>/</Spacer>
-          Student
-        </Txt>
-      </Txt>
-
       <Txt tag="p" fg={2}>
-        Hello, I&apos;m an undergraduate student studying computer science at the University of Washington&apos;s{" "}
+        I&apos;m an undergraduate student studying computer science at the University of Washington&apos;s{" "}
         <Link href={"https://www.cs.washington.edu/"} target="_blank">
           Paul G. Allen School of Computer Science & Engineering
         </Link>{" "}
         in Seattle, Washington. 
         My interests are in software as a service (SaaS), AL/ML integration, and data visualization.
       </Txt>
-
-      <ThemeToggle />
     </div>
   </header>
 );

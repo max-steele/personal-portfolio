@@ -135,7 +135,7 @@ const dhs: ExperienceProps = {
 const peer_mentor: ExperienceProps = {
   title: "Peer Mentor",
   organization: "Washington State University Tri-Cities GEAR-UP",
-  time: "Sept 2021 - June 2023",
+  time: "Sept 2022 - June 2023",
   location: "Kennewick, WA",
   image: {
     src: "/media/wsu.png",
@@ -173,7 +173,7 @@ const tutor: ExperienceProps = {
 };
 
 const target: ExperienceProps = {
-  title: "Team Member",
+  title: "Retail Associate",
   organization: "Target",
   time: "Aug 2022 - Sept 2023",
   location: "Kennewick, WA",
