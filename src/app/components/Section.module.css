@@ -89,3 +89,49 @@
   align-items: left;
   justify-items: left;
 }
+
+.ContactList {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding-top: 8px;
+  width: fit-content;
+}
+
+.ContactLink {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 8px 12px;
+  border-radius: var(--border-radius);
+  transition: all 0.2s ease;
+  text-decoration: none;
+  color: var(--foreground-color-2);
+}
+
+.ContactLink span:not(.ContactIcon) {
+  font-size: var(--font-size-4);
+  font-weight: var(--font-weight-normal);
+  position: relative;
+}
+
+.ContactLink span:not(.ContactIcon)::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 1px;
+  background-color: var(--foreground-color-1);
+  transition: width 0.2s ease;
+}
+
+.ContactLink:hover span:not(.ContactIcon)::after {
+  width: 100%;
+}
+
+.ContactIcon {
+  font-size: 1em;
+  width: 16px;
+  text-align: center;
+}

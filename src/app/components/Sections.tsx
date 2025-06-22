@@ -33,23 +33,51 @@ export type SectionProps = React.ComponentProps<
   typeof Section
 >;
 
-const about: SectionProps = {
+const contact: SectionProps = {
   sectionDescriptionProps: {
-    header: "About",
+    header: "Contact",
     components: [
       (
         <>
-          <Txt tag="p" fg={2}>
-            I am an undergraduate student at the University of Washington&apos;s{" "}
-            <Link href={"https://www.cs.washington.edu/"} target="_blank">
-              Paul G. Allen School of Computer Science & Engineering
-            </Link>{" "}
-            in Seattle, Washington. Additionally, I&apos;m a software engineering intern at{" "}
-            <Link href={"https://www.pnnl.gov/"} target="_blank">
-              Pacific Northwest National Laboratory
+          <div className={style.ContactList}>
+            <Link
+              href="https://linkedin.com/in/maxwell-steele"
+              className={style.ContactLink}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <span className={style.ContactIcon}>🔗</span>
+              <span>linkedin.com/in/maxwell-steele</span>
             </Link>
-            , where I am developing web applications with a focus on data visualization, biosecurity, and machine learning. 
-          </Txt>
+
+            <Link
+              href="mailto:msteele1@uw.edu"
+              className={style.ContactLink}
+            >
+              <span className={style.ContactIcon}>📧</span>
+              <span>msteele1 at uw dot edu</span>
+            </Link>
+            
+            <Link
+              href="https://github.com/max-steele"
+              className={style.ContactLink}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <span className={style.ContactIcon}>💻</span>
+              <span>github.com/max-steele</span>
+            </Link>
+
+            <Link
+              href="https://max-steele.digital"
+              className={style.ContactLink}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <span className={style.ContactIcon}>🌐</span>
+              <span>max-steele.digital</span>
+            </Link>
+          </div>
         </>
       )
     ]
@@ -140,7 +168,7 @@ const skills: SectionProps = {
 };
 
 export const sections = {
-  about,
+  contact,
   experience,
   education,
   skills

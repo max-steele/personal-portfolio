@@ -2,12 +2,11 @@ import Link from "next/link";
 
 import style from "./Header.module.css";
 
-import { externalLinkAttributes as external } from "../utils/link";
 import { Txt } from "../components/Text";
 import { Spacer } from "../components/Spacer";
 import { cx } from "../utils/joinClassNames";
-import { NavLinks } from "./NavLinks";
 import { Logo } from "./Logo";
+import { ThemeToggle } from "./ThemeToggle";
 
 export const Header: React.FC<React.ComponentProps<"header">> = ({
   className,
@@ -46,17 +45,16 @@ export const Header: React.FC<React.ComponentProps<"header">> = ({
         </Txt>
       </Txt>
 
-      <Txt tag="p" fg={2} className={style.HeaderDetails}>
-        Highly organized and adaptable undergraduate student at the University of Washington with professional software development experience. 
-        Currently working at {" "}
-        <Link href={"https://www.pnnl.gov/"} {...external}>
-          Pacific Northwest National Laboratory
-        </Link>
-        {"'s "}
-        Seattle Office.
+      <Txt tag="p" fg={2}>
+        Hello, I&apos;m an undergraduate student studying computer science at the University of Washington&apos;s{" "}
+        <Link href={"https://www.cs.washington.edu/"} target="_blank">
+          Paul G. Allen School of Computer Science & Engineering
+        </Link>{" "}
+        in Seattle, Washington. 
+        My interests are in software as a service (SaaS), AL/ML integration, and data visualization.
       </Txt>
 
-      <NavLinks className={style.HeaderNav} />
+      <ThemeToggle />
     </div>
   </header>
 );

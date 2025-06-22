@@ -10,7 +10,7 @@ export default function Home() {
     <div className={style.Layout}>
       <Header />
       <main className={cx(style.SectionLayout)}>
-        <Section {...sections.about} />
+        <Section {...sections.contact} />
         <Section {...sections.experience} />
         <Section {...sections.education} />
         <Section {...sections.skills} />
