@@ -13,7 +13,7 @@ export const Logo: React.FC<Partial<ImageProps>> = ({
   return (
     <Image
       className={cx(className)}
-      src={theme === "dark" ? "/ms-logo-dark.svg" : "/ms-logo.svg"}
+      src={theme === "dark" ? "/media/ms-logo-dark.svg" : "/media/ms-logo.svg"}
       alt={`ms logo`}
       width={16}
       height={16}

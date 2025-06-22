@@ -1,15 +1,30 @@
-.ExperienceMetadata h1 {
-  margin: 8px 0 0 0;
+.ExperienceContainer {
+  display: flex;
+  gap: 16px;
 }
 
-.ExperienceMetadata h3 {
-  margin: 8px 0;
+.ExperienceImage {
+  flex-shrink: 0;
+}
+
+.ExperienceLogo {
+  border-radius: 4px;
+  object-fit: contain;
+}
+
+.ExperienceContent {
+  flex: 1;
+}
+
+.ExperienceText h1 {
+  margin: 0;
+}
+
+.ExperienceText h3 {
+  margin: 4px 0 0 0;
 }
 
 .ExperienceDescription {
-  flex: 1 0 0;
-  min-width: 40%;
-  max-width: var(--section-content-width);
-  text-wrap: balance;
   padding-top: 8px;
+  text-wrap: balance;
 }
