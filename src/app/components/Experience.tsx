@@ -145,7 +145,7 @@ const peer_mentor: ExperienceProps = {
     (
       <>
         <Txt size={5} fg={2} tag="p">
-          Aided students in completing scholarship, financial aid applications, and college applications.
+          Aided students in completing scholarship, financial aid, and college applications.
         </Txt>
       </>
     )
@@ -179,41 +179,16 @@ const target: ExperienceProps = {
   location: "Kennewick, WA",
   image: {
     src: "/media/target.png",
-    alt: "WSU Logo"
+    alt: "Target Logo"
   },
   descriptions: []
-};
-
-export const uw: ExperienceProps = {
-  title: "B.S in Computer Science",
-  organization: "University of Washington",
-  time: "Sept 2023 - June 2026",
-  location: "Seattle, WA",
-  descriptions: [
-    (
-      <>
-        <Txt size={5} fg={3} tag="p">
-          <b>GPA: 3.91</b>
-        </Txt>
-      </>
-    ),
-    (
-      <>
-        <Txt size={5} fg={3} tag="p">
-          Relevant Coursework: Data Structures & Parallelism, Software Design & Implementation, Database
-          Management Systems, Hardware/Software Interface, Algorithms, Foundations of Computing 1 & 2
-          (Discrete Math & Probability), Linear Algebra
-        </Txt>
-      </>
-    )
-  ]
 };
 
 export const experiences: ExperienceProps[] = [
   highspot,
   pnnl,
   dhs,
-  target,
   peer_mentor,
   tutor,
+  target
 ];

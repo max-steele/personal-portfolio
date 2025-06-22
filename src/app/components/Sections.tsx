@@ -8,8 +8,11 @@ import {
 import { 
   Experience, 
   experiences,
-  uw 
 } from "./Experience";
+import {
+  Education,
+  uw
+} from "./Education";
 import { Txt } from "./Text";
 import Link from "next/link";
 import React from "react";
@@ -99,7 +102,7 @@ const education: SectionProps = {
     components: [
       (
         <>
-          <Experience key={"education"} {...uw} />
+          <Education key={"education"} {...uw} />
         </>
       )
     ]
