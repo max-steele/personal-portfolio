@@ -1,37 +1,33 @@
 "use client";
 import { motion } from "framer-motion";
-import style from "./LinkButton.module.css";
 import React, { CSSProperties, useRef } from "react";
+import style from "./MotionDivWrapper.module.css";
 import { useMagneticParallax } from "../utils/useMagneticParallax";
 import { useGrowParallax } from "../utils/useGrowParallax";
-import Link from "next/link";
-import { cx } from "../utils/joinClassNames";
 import { useClickScale } from "../utils/useClickScale";
-import { externalLinkAttributes } from "../utils/link";
+import { cx } from "../utils/joinClassNames";
 
-const MotionLink = motion(Link);
+const MotionDiv = motion.div;
 
-export type LinkButtonProps = React.ComponentProps<typeof MotionLink> & {
+export type MotionDivWrapperProps = React.ComponentProps<typeof MotionDiv> & {
   offsetPx?: number;
   duration?: number;
   classNameBg?: string;
   classNameInside?: string;
   type?: "minimal" | "outline" | "emphasis";
-  external?: boolean;
 };
 
-export const LinkButton: React.FC<LinkButtonProps> = ({
+export const MotionDivWrapper: React.FC<MotionDivWrapperProps> = ({
   children,
   className,
   offsetPx = 24,
-  duration = 0.15, // match
-  type = "minimal",
-  classNameInside,
+  duration = 0.2,
   classNameBg,
-  external,
+  classNameInside,
+  type = "minimal",
   ...props
 }) => {
-  const elementRef = useRef<HTMLElement>(null) as React.RefObject<HTMLElement>;
+	const elementRef = useRef<HTMLElement>(null) as React.RefObject<HTMLElement>;
 
   const {
     translateX: magneticTranslateX,
@@ -64,8 +60,6 @@ export const LinkButton: React.FC<LinkButtonProps> = ({
     scale: clickScale,
     startClickScale,
     endClickScale,
-    onPointerDown: clickScalePointerDown,
-    onPointerUp: clickScalePointerUp,
   } = useClickScale({
     elementRef,
     scalePx: 4,
@@ -74,23 +68,23 @@ export const LinkButton: React.FC<LinkButtonProps> = ({
   });
 
   const customVar = {
-    "--link-button-duration": duration + "s",
-    "--link-button-click-duration": clickDuration + "s",
+    "--motion-div-duration": `${duration}s`,
+    "--motion-div-click-duration": `${clickDuration}s`,
   } as CSSProperties;
 
   return (
-    <MotionLink
+    <MotionDiv
       className={cx(
         className,
-        style.LinkButton,
+        style.MotionDivWrapper,
         type === "outline"
-          ? style.LinkButtonOutline
+          ? style.MotionDivOutline
           : type === "emphasis"
-          ? style.LinkButtonEmphasis
+          ? style.MotionDivEmphasis
           : undefined
       )}
       style={customVar}
-      ref={elementRef as React.RefObject<HTMLAnchorElement>}
+      ref={elementRef as React.RefObject<HTMLDivElement>}
       onHoverStart={() => {
         startMagneticParallax();
         startGrowParallax();
@@ -105,17 +99,10 @@ export const LinkButton: React.FC<LinkButtonProps> = ({
         updateMagneticParallax();
         updateGrowParallax();
       }}
-      onPointerDown={() => {
-        clickScalePointerDown();
-      }}
-      onPointerUp={() => {
-        clickScalePointerUp();
-      }}
-      {...(external ? externalLinkAttributes : {})}
       {...props}
     >
       <motion.div
-        className={cx(classNameBg, style.LinkButtonBg)}
+        className={cx(classNameBg, style.MotionDivBg)}
         style={{
           x: growTranslateX,
           y: growTranslateY,
@@ -125,7 +112,7 @@ export const LinkButton: React.FC<LinkButtonProps> = ({
         }}
       />
       <motion.div
-        className={cx(classNameInside, style.LinkButtonInside)}
+        className={cx(classNameInside, style.MotionDivInside)}
         style={{
           x: magneticTranslateX,
           y: magneticTranslateY,
@@ -135,7 +122,7 @@ export const LinkButton: React.FC<LinkButtonProps> = ({
       >
         {children}
       </motion.div>
-    </MotionLink>
+    </MotionDiv>
   );
 };
 

@@ -1,12 +1,11 @@
 :root {
-  /* --plex-font-family- are from layout.tsx */
-  --font-family-sans: var(--plex-font-family-sans, sans-serif), sans-serif;
-  --font-family-mono: var(--plex-font-family-mono, monospace), ui-monospace, Menlo, Monaco, monospace;
+  --font-family-sans: "Consolas", sans-serif;
+  --font-family-mono: "Consolas", ui-monospace, Menlo, Monaco, monospace;
   --font-weight-normal: 400;
   --font-weight-bold: 600;
 
   --background-color-1: hsl(0, 0%, 100%);
-  --background-color-2: hsl(0, 0%, 80%);
+  --background-color-2: hsl(0, 0%, 95%);
   --background-color-3: hsl(0, 0%, 55%);
   --background-color-4: hsl(0, 0%, 45%);
 
@@ -49,6 +48,14 @@
   --column-text: 720px;
   --column-padding: 16px;
 
+}
+
+@font-face {
+  font-family: "Consolas";
+  src: url("/fonts/consolas.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
 }
 
 @media (max-width: 800px) {

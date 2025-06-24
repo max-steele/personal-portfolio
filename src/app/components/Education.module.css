@@ -1,0 +1,25 @@
+.EducationImage {
+  flex-shrink: 0;
+}
+
+.EducationLogo {
+  border-radius: 4px;
+  object-fit: contain;
+}
+
+.EducationContent {
+  flex: 1;
+}
+
+.EducationText h1 {
+  margin: 0;
+}
+
+.EducationText h3 {
+  margin: 4px 0 0 0;
+}
+
+.EducationDescription {
+  padding-top: 8px;
+  text-wrap: balance;
+}

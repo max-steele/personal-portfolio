@@ -1,4 +1,5 @@
 import { cx } from "../utils/joinClassNames";
+import { externalLinkAttributes as external } from "../utils/link";
 import style from "./Section.module.css";
 
 import {
@@ -8,9 +9,13 @@ import {
 import { 
   Experience, 
   experiences,
-  uw 
 } from "./Experience";
+import {
+  Education,
+  uw
+} from "./Education";
 import { Txt } from "./Text";
+import { MotionDivWrapper } from "./MotionDivWrapper";
 import Link from "next/link";
 import React from "react";
 
@@ -33,23 +38,48 @@ export type SectionProps = React.ComponentProps<
   typeof Section
 >;
 
-const about: SectionProps = {
+const contact: SectionProps = {
   sectionDescriptionProps: {
-    header: "About",
+    header: "Contact",
     components: [
       (
         <>
-          <Txt tag="p" fg={2}>
-            I am an undergraduate student at the University of Washington&apos;s{" "}
-            <Link href={"https://www.cs.washington.edu/"} target="_blank">
-              Paul G. Allen School of Computer Science & Engineering
-            </Link>{" "}
-            in Seattle, Washington. Additionally, I&apos;m a software engineering intern at{" "}
-            <Link href={"https://www.pnnl.gov/"} target="_blank">
-              Pacific Northwest National Laboratory
+          <div className={style.ContactList}>
+            <Link
+              href="https://linkedin.com/in/maxwell-steele"
+              className={style.ContactLink}
+              {...external}
+            >
+              <span className={style.ContactIcon}>🔗</span>
+              <span>linkedin.com/in/maxwell-steele</span>
             </Link>
-            , where I am developing web applications with a focus on data visualization, biosecurity, and machine learning. 
-          </Txt>
+
+            <Link
+              href="mailto:msteele1@uw.edu"
+              className={style.ContactLink}
+            >
+              <span className={style.ContactIcon}>📧</span>
+              <span>msteele1 at uw dot edu</span>
+            </Link>
+            
+            <Link
+              href="https://github.com/max-steele"
+              className={style.ContactLink}
+              {...external}
+            >
+              <span className={style.ContactIcon}>💻</span>
+              <span>github.com/max-steele</span>
+            </Link>
+
+            <Link
+              href="https://max-steele.digital"
+              className={style.ContactLink}
+              {...external}
+            >
+              <span className={style.ContactIcon}>🌐</span>
+              <span>max-steele.digital</span>
+            </Link>
+          </div>
         </>
       )
     ]
@@ -71,7 +101,7 @@ const education: SectionProps = {
     components: [
       (
         <>
-          <Experience key={"education"} {...uw} />
+          <Education key={"education"} {...uw} />
         </>
       )
     ]
@@ -85,53 +115,51 @@ const skills: SectionProps = {
       (
         <>
           <div className={style.Skills}>
-            <div className={style.GridGroup}>
+            <MotionDivWrapper className={style.GridGroup}>
               <Txt tag="p" size={4} fg={2} uppercase className={style.SectionHeader}>
                 <b>Languages</b>
               </Txt>
-              <Txt size={4} fg={2} className={style.SectionDescription}>
+              <Txt size={4} fg={2}>
                 <ul>
                   <li>JavaScript/TypeScript</li>
                   <li>Python</li>
                   <li>Java</li>
-                  <li>C</li>
-                  <li>GraphQL</li>
                   <li>SQL</li>
-                  <li>Bash</li>
+                  <li>GraphQL</li>
+                  <li>HTML/CSS</li>
                 </ul>
               </Txt>
-            </div>
+            </MotionDivWrapper>
 
-            <div className={style.GridGroup}>
+            <MotionDivWrapper className={style.GridGroup}>
               <Txt tag="p" size={4} fg={2} uppercase className={style.SectionHeader}>
-                <b>Frameworks & Tools</b>
+                <b>Tools</b>
               </Txt>
-              <Txt size={4} fg={2} className={style.SectionDescription}>
+              <Txt size={4} fg={2}>
+                <ul>
+                  <li>AWS</li>
+                  <li>Git</li>
+                  <li>Docker</li>
+                  <li>Bash</li>
+                  <li>Linux</li>
+                  <li>LaTeX</li>
+                </ul>
+              </Txt>
+            </MotionDivWrapper>
+
+            <MotionDivWrapper className={style.GridGroup}>
+              <Txt tag="p" size={4} fg={2} uppercase className={style.SectionHeader}>
+                <b>Frameworks</b>
+              </Txt>
+              <Txt size={4} fg={2}>
                 <ul>
                   <li>React</li>
                   <li>Node</li>
                   <li>Flask</li>
-                  <li>Docker</li>
-                  <li>Linux</li>
-                  <li>AWS</li>
+                  <li>Visx</li>
                 </ul>
               </Txt>
-            </div>
-
-            <div className={style.GridGroup}>
-              <Txt tag="p" size={4} fg={2} uppercase className={style.SectionHeader}>
-                <b>Technologies</b>
-              </Txt>
-              <Txt size={4} fg={2} className={style.SectionDescription}>
-                <ul>
-                  <li>Git</li>
-                  <li>GitLab</li>
-                  <li>Jira</li>
-                  <li>Confluence</li>
-                  <li>Agile</li>
-                </ul>
-              </Txt>
-            </div>
+            </MotionDivWrapper>
           </div>
         </>
       )
@@ -140,7 +168,7 @@ const skills: SectionProps = {
 };
 
 export const sections = {
-  about,
+  contact,
   experience,
   education,
   skills
