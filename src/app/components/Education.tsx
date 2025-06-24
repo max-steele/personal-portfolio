@@ -26,7 +26,7 @@ export const Education: React.FC<
   descriptions,
   ...props
 }) => (
-  <MotionDivWrapper className={cx(className, style.EducationContainer)}>
+  <MotionDivWrapper>
     <div className={style.EducationContent}>
       <div className={style.EducationText}>
         <Txt size={3} fg={1} tag="h1" bold>

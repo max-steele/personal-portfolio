@@ -5,7 +5,6 @@ import { Txt } from "./Text";
 import { MotionDivWrapper } from "./MotionDivWrapper";
 import Link from "next/link";
 import React, { ReactNode } from "react";
-import Image from "next/image";
 
 type ExperienceProps = React.ComponentProps<
   typeof Experience
@@ -30,33 +29,17 @@ export const Experience: React.FC<
   time,
   location,
   descriptions,
-  image,
   ...props
 }) => (
-  <MotionDivWrapper
-    className={cx(className, style.ExperienceWrapper)}
-    type="minimal"
-    duration={0.2}
-  >
+  <MotionDivWrapper>
     <div className={style.ExperienceContainer}>
-      {image && (
-        <div className={style.ExperienceImage}>
-          {/* <Image
-            src={image.src}
-            alt={image.alt}
-            width={55}
-            height={55}
-            className={style.ExperienceLogo}
-          /> */}
-        </div>
-      )}
       <div className={style.ExperienceContent}>
         <div className={style.ExperienceText}>
           <Txt size={3} fg={1} tag="h1" bold>
-            {title}
+            {organization}
           </Txt>
           <Txt size={4} fg={2} tag="h3">
-            {organization}
+            {title}
           </Txt>
           <Txt size={5} fg={3} tag="h3">
             {time}
@@ -80,10 +63,6 @@ const highspot: ExperienceProps = {
   organization: "Highspot",
   time: "July 2025 - Present",
   location: "Seattle, WA",
-  image: {
-    src: "/media/highspot.png",
-    alt: "Highspot Logo"
-  },
   descriptions: [
     (
       <>
@@ -100,19 +79,17 @@ const pnnl: ExperienceProps = {
   organization: "Pacific Northwest National Laboratory",
   time: "Sept 2024 - July 2025",
   location: "Seattle, WA",
-  image: {
-    src: "/media/pnnl.png",
-    alt: "PNNL Logo"
-  },
   descriptions: [
     (
       <>
         <Txt size={5} fg={2} tag="p">
-          Building AI/ML-driven web applications in the{" "}
+          As part of the{" "}
           <Link href={"https://www.pnnl.gov/ai-and-data-analytics"} target={"_blank"}>
             AI & Data Analytics
           </Link>{" "}
-          division at PNNL.
+          division at PNNL, I led the end-to-end development of several new features for a React-based web application delivering AI/ML driven insights for federal government agencies.
+          I designed and implemented client-facing data visualization tools to model trends in scientific literature, and developed a serverless user profiles feature using AWS CDK to provide personalized content aggregation, including search results and viewing history.
+          In addition, I authored a detailed user guide for non-technical project sponsors. 
         </Txt>
       </>
     )
@@ -120,19 +97,23 @@ const pnnl: ExperienceProps = {
 };
 
 const dhs: ExperienceProps = {
-  title: "DHS-WIRED Software Engineering Intern",
+  title: "DHS-WIRED Undergraduate Intern",
   organization: "Pacific Northwest National Laboratory",
   time: "June 2024 - Aug 2024",
   location: "Richland, WA",
-  image: {
-    src: "/media/pnnl.png",
-    alt: "PNNL Logo"
-  },
   descriptions: [
     (
       <>
         <Txt size={5} fg={2} tag="p">
-          Cloud-deployed analytics pipelines and scientific web interfaces.
+          I participated in the Department of Homeland Security (DHS) WIRED national security program at PNNL.
+          I worked within the{" "}
+          <Link href={"https://www.pnnl.gov/foundational-data-science"} target={"_blank"}>
+            Foundational Data Science
+          </Link>{" "}
+          group, part of PNNL's National Security Directorate. 
+          My primary project focused on developing scientific web interfaces to support cloud-deployed analytics pipelines.
+          This work was primarily in the natural language processing domain, including dynamic topic modeling using Latent Dirichlet Allocation (LDA).
+          Additionally, I authored a technical abstract and project report detailing my contributions, and presented at PNNL's Research Symposium.
         </Txt>
       </>
     )
@@ -142,12 +123,8 @@ const dhs: ExperienceProps = {
 const peer_mentor: ExperienceProps = {
   title: "Peer Mentor",
   organization: "Washington State University Tri-Cities GEAR-UP",
-  time: "Sept 2022 - June 2023",
+  time: "Sept 2022 - July 2023",
   location: "Kennewick, WA",
-  image: {
-    src: "/media/wsu.png",
-    alt: "WSU Logo"
-  },
   descriptions: [
     (
       <>
@@ -164,10 +141,6 @@ const tutor: ExperienceProps = {
   organization: "Washington State University Tri-Cities GEAR-UP",
   time: "Sept 2021 - June 2023",
   location: "Kennewick, WA",
-  image: {
-    src: "/media/wsu.png",
-    alt: "WSU Logo"
-  },
   descriptions: [
     (
       <>
@@ -179,23 +152,10 @@ const tutor: ExperienceProps = {
   ]
 };
 
-const target: ExperienceProps = {
-  title: "Retail Associate",
-  organization: "Target",
-  time: "Aug 2022 - Sept 2023",
-  location: "Kennewick, WA",
-  image: {
-    src: "/media/target.png",
-    alt: "Target Logo"
-  },
-  descriptions: []
-};
-
 export const experiences: ExperienceProps[] = [
   highspot,
   pnnl,
   dhs,
   peer_mentor,
-  tutor,
-  target
+  tutor
 ];

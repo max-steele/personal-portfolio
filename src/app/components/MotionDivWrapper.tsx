@@ -21,7 +21,7 @@ export const MotionDivWrapper: React.FC<MotionDivWrapperProps> = ({
   children,
   className,
   offsetPx = 24,
-  duration = 0.15,
+  duration = 0.2,
   classNameBg,
   classNameInside,
   type = "minimal",
