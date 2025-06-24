@@ -54,7 +54,7 @@ export const Education: React.FC<
 export const uw: EducationProps = {
   title: "B.S in Computer Science",
   organization: "University of Washington",
-  time: "Sept 2023 - June 2026",
+  time: "Sept 2023 - June 2027",
   location: "Seattle, WA",
   descriptions: [
     (
