@@ -1,4 +1,5 @@
 import { cx } from "../utils/joinClassNames";
+import { externalLinkAttributes as external } from "../utils/link";
 import style from "./Experience.module.css";
 
 import { Txt } from "./Text";
@@ -84,7 +85,7 @@ const pnnl: ExperienceProps = {
       <>
         <Txt size={5} fg={2} tag="p">
           As part of the{" "}
-          <Link href={"https://www.pnnl.gov/ai-and-data-analytics"} target={"_blank"}>
+          <Link href={"https://www.pnnl.gov/ai-and-data-analytics"} {...external}>
             AI & Data Analytics
           </Link>{" "}
           division at PNNL, I led the end-to-end development of several new features for a React-based web application delivering AI/ML driven insights for federal government agencies.
@@ -107,7 +108,7 @@ const dhs: ExperienceProps = {
         <Txt size={5} fg={2} tag="p">
           I participated in the Department of Homeland Security (DHS) WIRED national security program at PNNL.
           I worked within the{" "}
-          <Link href={"https://www.pnnl.gov/foundational-data-science"} target={"_blank"}>
+          <Link href={"https://www.pnnl.gov/foundational-data-science"} {...external}>
             Foundational Data Science
           </Link>{" "}
           group, part of PNNL's National Security Directorate. 

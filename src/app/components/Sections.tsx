@@ -1,4 +1,5 @@
 import { cx } from "../utils/joinClassNames";
+import { externalLinkAttributes as external } from "../utils/link";
 import style from "./Section.module.css";
 
 import {
@@ -47,8 +48,7 @@ const contact: SectionProps = {
             <Link
               href="https://linkedin.com/in/maxwell-steele"
               className={style.ContactLink}
-              target="_blank"
-              rel="noopener noreferrer"
+              {...external}
             >
               <span className={style.ContactIcon}>🔗</span>
               <span>linkedin.com/in/maxwell-steele</span>
@@ -65,8 +65,7 @@ const contact: SectionProps = {
             <Link
               href="https://github.com/max-steele"
               className={style.ContactLink}
-              target="_blank"
-              rel="noopener noreferrer"
+              {...external}
             >
               <span className={style.ContactIcon}>💻</span>
               <span>github.com/max-steele</span>
@@ -75,8 +74,7 @@ const contact: SectionProps = {
             <Link
               href="https://max-steele.digital"
               className={style.ContactLink}
-              target="_blank"
-              rel="noopener noreferrer"
+              {...external}
             >
               <span className={style.ContactIcon}>🌐</span>
               <span>max-steele.digital</span>

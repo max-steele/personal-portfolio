@@ -4,6 +4,7 @@ import style from "./Header.module.css";
 
 import { Txt } from "../components/Text";
 import { cx } from "../utils/joinClassNames";
+import { externalLinkAttributes as external } from "../utils/link";
 import { Logo } from "./Logo";
 
 export const Header: React.FC<React.ComponentProps<"header">> = ({
@@ -36,8 +37,8 @@ export const Header: React.FC<React.ComponentProps<"header">> = ({
       </Txt>
 
       <Txt tag="p" fg={2}>
-        I&apos;m an undergraduate student studying computer science at the University of Washington&apos;s{" "}
-        <Link href={"https://www.cs.washington.edu/"} target="_blank">
+        I'm an undergraduate student studying computer science at the University of Washington's{" "}
+        <Link href={"https://www.cs.washington.edu/"} {...external}>
           Paul G. Allen School of Computer Science & Engineering
         </Link>{" "}
         in Seattle, Washington. 
