@@ -2,6 +2,7 @@ import { cx } from "../utils/joinClassNames";
 import style from "./Education.module.css";
 
 import { Txt } from "./Text";
+import { MotionDivWrapper } from "./MotionDivWrapper";
 import React, { ReactNode } from "react";
 
 type EducationProps = React.ComponentProps<
@@ -25,7 +26,7 @@ export const Education: React.FC<
   descriptions,
   ...props
 }) => (
-  <div className={cx(className, style.EducationContainer)} {...props}>
+  <MotionDivWrapper className={cx(className, style.EducationContainer)}>
     <div className={style.EducationContent}>
       <div className={style.EducationText}>
         <Txt size={3} fg={1} tag="h1" bold>
@@ -47,7 +48,7 @@ export const Education: React.FC<
         </div>
       ))}
     </div>
-  </div>
+  </MotionDivWrapper>
 );
 
 export const uw: EducationProps = {

@@ -11,9 +11,9 @@
 .SectionHeader {
   padding-bottom: 8px;
   border-bottom: var(--border-1);
-  & h2 {
-    margin: 0;
-  }
+}
+.SectionHeader h2 {
+  margin: 0;
 }
 
 .SectionDescription {
@@ -24,46 +24,25 @@
   margin-top: 8px;
   padding: 8px 0 0 0;
 }
-
 .SectionDescription p {
   margin: 0 0;
-}
-
-.SectionDescriptionButtonRow {
-  flex-wrap: wrap;
-  display: flex;
-  gap: 8px;
-  margin: 12px 0;
 }
 
 .Skills {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  padding-top: 8px;
   width: 100%;
-  gap: 16px;
 }
-
 .Skills ul {
   list-style-type: square;
   padding-left: 20px;
   margin: 0;
 }
-
 .Skills li {
-  margin-bottom: 8px;
+  margin-top: 8px;
 }
 
-.Skills li::marker {
-  color: var(--foreground-color-2);
-  font-size: 1.2em;
-}
-
-.Skills li i {
-  margin-right: 8px;
-  font-size: 1.2em;
-}
 
 .RowContainer {
   display: flex;
@@ -80,15 +59,7 @@
   flex-direction: column;
   max-width: 300px;
   text-align: left;
-}
-
-.GridContainer {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 10px;
-  display: 'flex';
-  align-items: left;
-  justify-items: left;
+  gap: 16px;
 }
 
 .ContactList {
@@ -107,13 +78,11 @@
   text-decoration: none;
   color: var(--foreground-color-2);
 }
-
 .ContactLink span:not(.ContactIcon) {
   font-size: var(--font-size-4);
   font-weight: var(--font-weight-normal);
   position: relative;
 }
-
 .ContactLink span:not(.ContactIcon)::after {
   content: '';
   position: absolute;
@@ -124,7 +93,6 @@
   background-color: var(--foreground-color-1);
   transition: width 0.2s ease;
 }
-
 .ContactLink:hover span:not(.ContactIcon)::after {
   width: 100%;
 }

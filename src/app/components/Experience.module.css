@@ -1,7 +1,11 @@
+.ExperienceWrapper {
+  margin-top: 24px;
+}
+
 .ExperienceContainer {
   display: flex;
-  gap: 16px;
-  margin-top: 24px;
+  flex-direction: row;
+  align-items: flex-start;
 }
 
 .ExperienceImage {

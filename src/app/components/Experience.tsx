@@ -2,6 +2,7 @@ import { cx } from "../utils/joinClassNames";
 import style from "./Experience.module.css";
 
 import { Txt } from "./Text";
+import { MotionDivWrapper } from "./MotionDivWrapper";
 import Link from "next/link";
 import React, { ReactNode } from "react";
 import Image from "next/image";
@@ -32,40 +33,46 @@ export const Experience: React.FC<
   image,
   ...props
 }) => (
-  <div className={cx(className, style.ExperienceContainer)} {...props}>
-    {image && (
-      <div className={style.ExperienceImage}>
-        <Image
-          src={image.src}
-          alt={image.alt}
-          width={55}
-          height={55}
-          className={style.ExperienceLogo}
-        />
-      </div>
-    )}
-    <div className={style.ExperienceContent}>
-      <div className={style.ExperienceText}>
-        <Txt size={3} fg={1} tag="h1" bold>
-          {title}
-        </Txt>
-        <Txt size={4} fg={2} tag="h3">
-          {organization}
-        </Txt>
-        <Txt size={5} fg={3} tag="h3">
-          {time}
-        </Txt>
-        <Txt size={5} fg={3} tag="h3" italic>
-          {location}
-        </Txt>
-      </div>
-      {descriptions.map((description, index) => (
-        <div key={index} className={cx(className, style.ExperienceDescription)}>
-          {description}
+  <MotionDivWrapper
+    className={cx(className, style.ExperienceWrapper)}
+    type="minimal"
+    duration={0.2}
+  >
+    <div className={style.ExperienceContainer}>
+      {image && (
+        <div className={style.ExperienceImage}>
+          {/* <Image
+            src={image.src}
+            alt={image.alt}
+            width={55}
+            height={55}
+            className={style.ExperienceLogo}
+          /> */}
         </div>
-      ))}
+      )}
+      <div className={style.ExperienceContent}>
+        <div className={style.ExperienceText}>
+          <Txt size={3} fg={1} tag="h1" bold>
+            {title}
+          </Txt>
+          <Txt size={4} fg={2} tag="h3">
+            {organization}
+          </Txt>
+          <Txt size={5} fg={3} tag="h3">
+            {time}
+          </Txt>
+          <Txt size={5} fg={3} tag="h3" italic>
+            {location}
+          </Txt>
+        </div>
+        {descriptions.map((description, index) => (
+          <div key={index} className={cx(className, style.ExperienceDescription)}>
+            {description}
+          </div>
+        ))}
+      </div>
     </div>
-  </div>
+  </MotionDivWrapper>
 );
 
 const highspot: ExperienceProps = {
