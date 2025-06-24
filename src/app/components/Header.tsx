@@ -37,7 +37,7 @@ export const Header: React.FC<React.ComponentProps<"header">> = ({
       </Txt>
 
       <Txt tag="p" fg={2}>
-        I'm an undergraduate student studying computer science at the University of Washington's{" "}
+        I&apos;m an undergraduate student studying computer science at the University of Washington&apos;s{" "}
         <Link href={"https://www.cs.washington.edu/"} {...external}>
           Paul G. Allen School of Computer Science & Engineering
         </Link>{" "}

@@ -90,7 +90,7 @@ const pnnl: ExperienceProps = {
           </Link>{" "}
           division at PNNL, I led the end-to-end development of several new features for a React-based web application delivering AI/ML driven insights for federal government agencies.
           I designed and implemented client-facing data visualization tools to model trends in scientific literature, and developed a serverless user profiles feature using AWS CDK to provide personalized content aggregation, including search results and viewing history.
-          In addition, I authored a detailed user guide for non-technical project sponsors. 
+          In addition, I authored a detailed user guide for non-technical project sponsors.
         </Txt>
       </>
     )
@@ -111,10 +111,10 @@ const dhs: ExperienceProps = {
           <Link href={"https://www.pnnl.gov/foundational-data-science"} {...external}>
             Foundational Data Science
           </Link>{" "}
-          group, part of PNNL's National Security Directorate. 
+          group, part of PNNL&apos;s National Security Directorate. 
           My primary project focused on developing scientific web interfaces to support cloud-deployed analytics pipelines.
           This work was primarily in the natural language processing domain, including dynamic topic modeling using Latent Dirichlet Allocation (LDA).
-          Additionally, I authored a technical abstract and project report detailing my contributions, and presented at PNNL's Research Symposium.
+          Additionally, I authored a technical abstract and project report detailing my contributions, and presented at PNNL&apos;s Research Symposium.
         </Txt>
       </>
     )
