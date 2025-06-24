@@ -24,7 +24,6 @@ export const Education: React.FC<
   time,
   location,
   descriptions,
-  ...props
 }) => (
   <MotionDivWrapper>
     <div className={style.EducationContent}>

@@ -30,7 +30,6 @@ export const Experience: React.FC<
   time,
   location,
   descriptions,
-  ...props
 }) => (
   <MotionDivWrapper>
     <div className={style.ExperienceContainer}>
