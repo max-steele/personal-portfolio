@@ -59,7 +59,7 @@ export const Experience: React.FC<
 );
 
 const highspot: ExperienceProps = {
-  title: "Incoming Associate Engineer Intern",
+  title: "Associate Engineer Intern",
   organization: "Highspot",
   time: "July 2025 - Present",
   location: "Seattle, WA",
@@ -67,7 +67,7 @@ const highspot: ExperienceProps = {
     (
       <>
         <Txt size={5} fg={2} tag="p">
-          Summer 2025
+          Data & Analytics
         </Txt>
       </>
     )
@@ -88,8 +88,8 @@ const pnnl: ExperienceProps = {
             AI & Data Analytics
           </Link>{" "}
           division at PNNL, I led the end-to-end development of several new features for a React-based web application delivering AI/ML driven insights for federal government agencies.
-          I designed and implemented client-facing data visualization tools to model trends in scientific literature, and developed a serverless user profiles feature using AWS CDK to provide personalized content aggregation, including search results and viewing history.
-          In addition, I authored a detailed user guide for non-technical project sponsors.
+          I designed and implemented client-facing data visualization tools to model trends in 5+ million open-source scientific documents using NLP-based analytics such as BERTopic and ReFinEd entity linking.
+          In addition, I developed a serverless user profiles feature using AWS CDK to provide personalized content aggregation (search history, viewing behavior) and authored a 100+ page user guide for technical and non-technical project sponsors.
         </Txt>
       </>
     )
@@ -106,13 +106,12 @@ const dhs: ExperienceProps = {
       <>
         <Txt size={5} fg={2} tag="p">
           I participated in the Department of Homeland Security (DHS) WIRED national security program at PNNL.
-          I worked within the{" "}
+          I developed scientific web interfaces to support cloud-deployed analytics pipelines as part of the{" "}
           <Link href={"https://www.pnnl.gov/foundational-data-science"} {...external}>
             Foundational Data Science
           </Link>{" "}
           group, part of PNNL&apos;s National Security Directorate. 
-          My primary project focused on developing scientific web interfaces to support cloud-deployed analytics pipelines.
-          This work was primarily in the natural language processing domain, including dynamic topic modeling using Latent Dirichlet Allocation (LDA).
+          This was primarily in the natural language processing domain, including dynamic topic modeling using Latent Dirichlet Allocation (LDA).
           Additionally, I authored a technical abstract and project report detailing my contributions, and presented at PNNL&apos;s Research Symposium.
         </Txt>
       </>

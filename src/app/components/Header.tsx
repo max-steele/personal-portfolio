@@ -42,7 +42,7 @@ export const Header: React.FC<React.ComponentProps<"header">> = ({
           Paul G. Allen School of Computer Science & Engineering
         </Link>{" "}
         in Seattle, Washington. 
-        My interests are in software as a service (SaaS), AL/ML integration, and data visualization.
+        My interests are in software as a service (SaaS), AI/ML integration, and data visualization.
       </Txt>
     </div>
   </header>
