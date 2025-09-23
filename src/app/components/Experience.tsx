@@ -61,13 +61,22 @@ export const Experience: React.FC<
 const highspot: ExperienceProps = {
   title: "Associate Engineer Intern",
   organization: "Highspot",
-  time: "July 2025 - Present",
+  time: "July 2025 - Sept 2025",
   location: "Seattle, WA",
   descriptions: [
     (
       <>
         <Txt size={5} fg={2} tag="p">
-          Data & Analytics
+          <Link href={"https://www.highspot.com/product/analytics/"} {...external}>
+            Data & Analytics
+          </Link>
+        </Txt>
+      </>
+    ),
+    (
+      <>
+        <Txt size={5} fg={2} tag="p">
+          Developed Agentic AI features for Nexus, Highspot&apos;s unified AI and Analytics engine.
         </Txt>
       </>
     )
@@ -83,13 +92,16 @@ const pnnl: ExperienceProps = {
     (
       <>
         <Txt size={5} fg={2} tag="p">
-          As part of the{" "}
           <Link href={"https://www.pnnl.gov/ai-and-data-analytics"} {...external}>
             AI & Data Analytics
-          </Link>{" "}
-          division at PNNL, I led the end-to-end development of several new features for a React-based web application delivering AI/ML driven insights for federal government agencies.
-          I designed and implemented client-facing data visualization tools to model trends in 5+ million open-source scientific documents using NLP-based analytics such as BERTopic and ReFinEd entity linking.
-          In addition, I developed a serverless user profiles feature using AWS CDK to provide personalized content aggregation (search history, viewing behavior) and authored a 100+ page user guide for technical and non-technical project sponsors.
+          </Link>
+        </Txt>
+      </>
+    ),
+    (
+      <>
+        <Txt size={5} fg={2} tag="p">
+          Developed data visualization web apps for NLP-based analytics modeling open-source scientific literature.
         </Txt>
       </>
     )
@@ -97,7 +109,7 @@ const pnnl: ExperienceProps = {
 };
 
 const dhs: ExperienceProps = {
-  title: "DHS-WIRED Undergraduate Intern",
+  title: "Software Engineer Intern",
   organization: "Pacific Northwest National Laboratory",
   time: "June 2024 - Aug 2024",
   location: "Richland, WA",
@@ -105,14 +117,16 @@ const dhs: ExperienceProps = {
     (
       <>
         <Txt size={5} fg={2} tag="p">
-          I participated in the Department of Homeland Security (DHS) WIRED national security program at PNNL.
-          I developed scientific web interfaces to support cloud-deployed analytics pipelines as part of the{" "}
           <Link href={"https://www.pnnl.gov/foundational-data-science"} {...external}>
             Foundational Data Science
-          </Link>{" "}
-          group, part of PNNL&apos;s National Security Directorate. 
-          This was primarily in the natural language processing domain, including dynamic topic modeling using Latent Dirichlet Allocation (LDA).
-          Additionally, I authored a technical abstract and project report detailing my contributions, and presented at PNNL&apos;s Research Symposium.
+          </Link>
+        </Txt>
+      </>
+    ),
+    (
+      <>
+        <Txt size={5} fg={2} tag="p">
+          Built UIs for cloud-deployed analytics pipelines within the DHS-WIRED national security program.
         </Txt>
       </>
     )
@@ -121,7 +135,7 @@ const dhs: ExperienceProps = {
 
 const peer_mentor: ExperienceProps = {
   title: "Peer Mentor",
-  organization: "Washington State University Tri-Cities GEAR-UP",
+  organization: "Washington State University GEAR-UP",
   time: "Sept 2022 - July 2023",
   location: "Kennewick, WA",
   descriptions: [
@@ -137,7 +151,7 @@ const peer_mentor: ExperienceProps = {
 
 const tutor: ExperienceProps = {
   title: "Student Tutor",
-  organization: "Washington State University Tri-Cities GEAR-UP",
+  organization: "Washington State University GEAR-UP",
   time: "Sept 2021 - June 2023",
   location: "Kennewick, WA",
   descriptions: [

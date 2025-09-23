@@ -5,7 +5,6 @@ import style from "./Header.module.css";
 import { Txt } from "../components/Text";
 import { cx } from "../utils/joinClassNames";
 import { externalLinkAttributes as external } from "../utils/link";
-import { Logo } from "./Logo";
 
 export const Header: React.FC<React.ComponentProps<"header">> = ({
   className,
@@ -16,16 +15,6 @@ export const Header: React.FC<React.ComponentProps<"header">> = ({
     {...props}
   >
     <div className={cx(style.HeaderLayout)}>
-      <Logo
-        style={{
-          marginBottom: 48,
-          height: 16 * 4,
-          width: 16 * 4,
-          marginInline: -16,
-          paddingLeft: 18,
-        }}
-      />
-
       <Txt
         tag="h1"
         size={1}
@@ -42,7 +31,7 @@ export const Header: React.FC<React.ComponentProps<"header">> = ({
           Paul G. Allen School of Computer Science & Engineering
         </Link>{" "}
         in Seattle, Washington. 
-        My interests are in software as a service (SaaS), AI/ML integration, and data visualization.
+        My interests are in software as a service, AI/ML integration, and data visualization.
       </Txt>
     </div>
   </header>
