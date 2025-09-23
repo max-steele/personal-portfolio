@@ -66,9 +66,8 @@ export const uw: EducationProps = {
     (
       <>
         <Txt size={5} fg={3} tag="p">
-          Relevant Coursework: Data Structures & Parallelism, Software Design & Implementation, Database
-          Management Systems, Hardware/Software Interface, Algorithms, Foundations of Computing 1 & 2
-          (Discrete Math & Probability), Linear Algebra
+          Relevant Coursework: Data Structures, Software Design, Systems Programming, Database
+          Management Systems, Hardware/Software Interface, Algorithms, Machine Learning, Linear Algebra
         </Txt>
       </>
     )
