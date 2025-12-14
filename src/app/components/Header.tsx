@@ -30,8 +30,8 @@ export const Header: React.FC<React.ComponentProps<"header">> = ({
         <Link href={"https://www.cs.washington.edu/"} {...external}>
           Paul G. Allen School of Computer Science & Engineering
         </Link>{" "}
-        in Seattle, Washington. 
-        My interests are in software as a service, AI/ML integration, and data visualization.
+        in Seattle, Washington.
+        My interests include data analytics and data visualization.
       </Txt>
     </div>
   </header>

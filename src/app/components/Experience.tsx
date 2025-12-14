@@ -58,6 +58,22 @@ export const Experience: React.FC<
   </MotionDivWrapper>
 );
 
+const mongodb: ExperienceProps = {
+  title: "Incoming Software Engineering Intern",
+  organization: "MongoDB",
+  time: "Nov 2025 - Present",
+  location: "New York, NY",
+  descriptions: [
+    (
+      <>
+        <Txt size={5} fg={2} tag="p">
+          Incoming Summer 2026
+        </Txt>
+      </>
+    )
+  ]
+};
+
 const highspot: ExperienceProps = {
   title: "Associate Engineer Intern",
   organization: "Highspot",
@@ -166,6 +182,7 @@ const tutor: ExperienceProps = {
 };
 
 export const experiences: ExperienceProps[] = [
+  mongodb,
   highspot,
   pnnl,
   dhs,
