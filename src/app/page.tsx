@@ -15,7 +15,6 @@ export default function Home() {
         <Section {...sections.contact} />
         <Section {...sections.experience} />
         <Section {...sections.education} />
-        <Section {...sections.skills} />
       </main>
       <Footer />
     </div>
