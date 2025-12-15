@@ -4,8 +4,7 @@ import { ThemeProvider } from "./context/ThemeContext";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Maxwell Steele | Software Engineer",
-  description: "Maxwell Steele - Undergraduate Computer Science student at the University of Washington, software engineer in the Foundational Data Science group at Pacific Northwest National Laboratory in Seattle, Washington.",
+  title: "Maxwell Steele",
 };
 
 export default function RootLayout({
@@ -16,9 +15,8 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <title>Maxwell Steele | Software Engineer</title>
-        <meta name="description" content="Maxwell Steele is an undergraduate student at the University of Washington and a 
-        software engineer in the Foundational Data Science group at Pacific Northwest National Laboratory in Seattle, Washington." />
+        <title>Maxwell Steele</title>
+        <meta name="description" content="Maxwell Steele is an undergraduate student studying computer science at the University of Washington's Paul G. Allen School in Seattle, Washington."/>
         <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
         <meta name="next-size-adjust" />
       </head>
