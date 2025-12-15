@@ -53,15 +53,6 @@
   width: 100%;
 }
 
-.GridGroup {
-  display: flex;
-  flex: 1 1 auto;
-  flex-direction: column;
-  max-width: 300px;
-  text-align: left;
-  gap: 16px;
-}
-
 .ContactList {
   display: flex;
   flex-direction: column;
