@@ -38,13 +38,6 @@ export const Footer: React.FC<React.ComponentProps<"footer">> = ({
           Next.js
         </Link>
       </Txt>
-      <Spacer>/</Spacer>
-      <Txt>
-        Deployed on{" "}
-        <Link href={"https://vercel.com/solutions/nextjs"} {...external}>
-          Vercel
-        </Link>
-      </Txt>
     </Txt>
   </footer>
 );
