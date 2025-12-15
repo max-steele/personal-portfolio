@@ -1,0 +1,8 @@
+1:"$Sreact.fragment"
+2:I[97367,["/_next/static/chunks/ff1a16fafef87110.js","/_next/static/chunks/247eb132b7f7b574.js"],"ViewportBoundary"]
+4:I[97367,["/_next/static/chunks/ff1a16fafef87110.js","/_next/static/chunks/247eb132b7f7b574.js"],"MetadataBoundary"]
+5:"$Sreact.suspense"
+7:I[27201,["/_next/static/chunks/ff1a16fafef87110.js","/_next/static/chunks/247eb132b7f7b574.js"],"IconMark"]
+0:{"buildId":"f5WiE5PHCdTIxDSH6x63O","rsc":["$","$1","h",{"children":[null,["$","$L2",null,{"children":"$@3"}],["$","div",null,{"hidden":true,"children":["$","$L4",null,{"children":["$","$5",null,{"name":"Next.Metadata","children":"$@6"}]}]}],null]}],"loading":null,"isPartial":false}
+3:[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]
+6:[["$","title","0",{"children":"Maxwell Steele | Software Engineer"}],["$","meta","1",{"name":"description","content":"Maxwell Steele - Undergraduate Computer Science student at the University of Washington, software engineer in the Foundational Data Science group at Pacific Northwest National Laboratory in Seattle, Washington."}],["$","link","2",{"rel":"manifest","href":"/manifest.json"}],["$","link","3",{"rel":"icon","href":"/favicon.ico?favicon.6b3b26ec.ico","sizes":"48x48","type":"image/x-icon"}],["$","link","4",{"rel":"icon","href":"/icon.png?icon.e27e9806.png","sizes":"96x96","type":"image/png"}],["$","link","5",{"rel":"icon","href":"/icon.svg?icon.29699036.svg","sizes":"any","type":"image/svg+xml"}],["$","link","6",{"rel":"apple-touch-icon","href":"/apple-icon.png?apple-icon.02f49868.png","sizes":"180x180","type":"image/png"}],["$","$L7","7",{}]]
