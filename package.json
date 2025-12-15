@@ -7,7 +7,7 @@
     "build": "yarn next build",
     "start": "yarn next start",
     "lint": "yarn next lint",
-    "deploy": "gh-pages -d out"
+    "deploy": "yarn build && gh-pages -d out"
   },
   "dependencies": {
     "@vercel/analytics": "^1.5.0",
